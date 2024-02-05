@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste de Z-index</title>
+
+        <style>
+
+            .box{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                opacity: 0.7;
+            }
+
+            .box1{
+                background-color:lightblue;
+                left: 2px;
+                top:0px;
+                color:white;
+                z-index: 3;
+            }
+
+            .box2{
+                background-color:lightcoral;
+                left: 30px;
+                top:100px;
+                color:black;
+                z-index:1;
+            }
+
+            .box3{
+                background-color:darkorange;
+                left:50px;
+                top:200px;
+                z-index:2;
+            }
+        </style>
+    
+    </head>
+    <body>
+       
+        <div class="box box1">Texto 1<br>Um texto.</div>
+        <div class="box box2">Texto 2<br>Outro texto.</div>
+        <div class="box box3">Texto 3<br>Mais um texto.</div>
+
+    </body>
+</html>

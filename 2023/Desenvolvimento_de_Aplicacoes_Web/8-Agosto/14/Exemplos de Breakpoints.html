@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Menu Responsivo</title>
+
+        <style type="text/css">
+            
+            body{
+                margin: 0;
+                font-size: 20px;
+                background-color: #f3f3f3;
+            }
+
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 1.2em;
+                width: calc(100vw-padding);
+                background-color: #141414;
+                font-family: sans-serif;
+                color: white;
+            }
+
+            .menu a:link{
+                text-decoration: none;
+            }
+
+            .menu span{
+                margin-right: 1.2em;
+            }
+
+            a:link{
+                color: white;
+            }
+
+            a:visited{
+                color:white;
+            }
+
+            article{
+                font-family: 'Poppins', sans-serif;
+                margin: 2em;
+                text-align: justify;
+                max-width: 800px;
+            }
+
+            section{
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media (min-width: 320px) and (max-width: 480px){
+                .menu{
+                    flex-direction: column;
+                    font-size: 0.3em;
+                }
+
+                section{
+                    background-color: pink;
+                    font-size: 0.3em;
+
+                    flex-direction: column;
+                }
+            }
+
+            @media (min-width: 481px) and (max-width: 767px){
+                .menu{
+                    flex-direction: column;
+                    font-size: 0.7em;
+                }
+
+                section{
+                    background-color: lightblue;
+                    font-size: 0.7em;
+
+                    flex-direction: column;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px){
+                .menu{
+                    flex-direction: column;
+                    font-size: 0.8em;
+                }
+
+                section{
+                    background-color: lightgreen;
+                    font-size: 0.8em;
+
+                    flex-direction: column;
+                }
+            }
+
+            /*Para impressão ---> Ctrl+P
+            @media print{
+                .body{
+                    background-color: white;
+                }
+
+                .menu, .imp{
+                    display: none;
+                }
+            }
+
+            .imp{
+                margin: 10px;
+                text-align: right;
+            }*/
+
+        </style>
+    </head>
+    <body>
+    <nav class="menu">
+        <span><a href="http://www.cotil.unicamp.br">Cotil</a></span>
+        <span><a href="http://www.unicamp.br">Unicamp</a></span>
+        <span><a href="mailto: sberbert@unicamp.br">Profª Simone</a></span>
+        <span><a href="tel: (19) 21133391">Depto. Infraestrutura e Tecnologia</a></span>
+    </nav>
+
+    <div class="imp">
+        <a href="" onclick='window.print()';>
+            <img src="Impressora.png" alt="Imprimir">
+        </a>
+    </div>
+
+    <section>
+        <article>
+           <h1>A UNICAMP</h1>
+
+            A Unicamp foi oficialmente fundada em 5 de outubro de 1966, dia do lançamento de sua pedra fundamental. Mesmo num contexto universitário recente, em que a universidade brasileira mais  antiga tem pouco mais de sete décadas, a Unicamp pode ser considerada uma instituição jovem que já conquistou forte tradição no ensino, na pesquisa e nas relações com a sociedade.
+        </article>
+
+        <article>
+            <h1>O COTIL</h1>
+        
+            O Colégio Técnico de Limeira – COTIL, da Universidade Estadual de Campinas, foi criado pela Lei Estadual nº 7.655, de 28 de dezembro de 1962, e autorizado a ser instalado e a entrar em funcionamento pela Resolução C.E.E. nº 46/1966 e Deliberação C.E.E. nº 12/1970, Diário Oficial de 29/01/72. Sua instalação se deu em 24 de abril de 1967, dia em que se comemora seu aniversário.
+        </article>
+    </section>
+    </body>
+</html>

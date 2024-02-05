@@ -1,0 +1,9 @@
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.Form1.resources
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.Properties.Resources.resources
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\Aula3Exer1\bin\Debug\Aula3Exer1.exe.config
+C:\Users\aluno\source\repos\Aula3Exer1\bin\Debug\Aula3Exer1.exe
+C:\Users\aluno\source\repos\Aula3Exer1\bin\Debug\Aula3Exer1.pdb
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.exe
+C:\Users\aluno\source\repos\Aula3Exer1\obj\Debug\Aula3Exer1.pdb

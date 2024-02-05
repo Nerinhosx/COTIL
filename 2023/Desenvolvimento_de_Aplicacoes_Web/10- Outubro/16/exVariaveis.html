@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exemplo Variáveis JavaScript</title>
+
+        <script language="Javascript">
+
+            //Início teste variável string
+                var variavel = "Cotil";
+                console.log("Variável = "+ variavel);
+                console.log(typeof variavel);
+            //Fim teste variável string
+
+            //Início teste variável int
+                variavel = 10;
+                console.log("Variável = "+ variavel);
+                console.log(typeof variavel);
+            //Fim teste variável int
+
+            //Início teste variável boolean
+                variavel = true;
+                console.log("Variável = "+ variavel);
+                console.log(typeof variavel);
+            //Fim teste variável boolean
+
+            console.log("Como já dizia minha mãe: \"Volte já para casa menino, está na hora do almoço.\"");
+            console.log('Como já dizia minha mãe: "Volte já para casa menino, está na hora do almoço."');
+
+            console.log('JavaScript is an incredible language. I\'ve never sae nothing similar.');
+            console.log("JavaScript is an incredible language. I've never sae nothing similar.");
+
+
+            //Escopo de var - global
+            var nome = "Simone";
+            
+            if(nome != null)
+            {
+                var sobrenome = "Dapólito";
+                //Console.log(nome + ' ' + sobrenome);
+            }
+            //A var sobrenome é acessível mesmo fora do if onde foi declarada
+            
+            //Escopo de let - local
+            let colegio = "Cotil";
+            
+            if(colegio != null)
+            {
+                let universidade = "Unicamp";
+                //Console.log(colegio + ' - ' + universidade);
+            }
+            Console.log(colegio + ' - ' + universidade);
+            //Colegio é acessível pois foi declarado fora do if/function
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>

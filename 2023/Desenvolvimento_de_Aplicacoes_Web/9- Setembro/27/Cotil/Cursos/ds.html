@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desenvolvimento de Sistemas</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="../CSS/Style.css">
+    </head>
+    <body>
+        <!--Início navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../Imagens/Logo.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Index_BootstrapCotil.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nossaEscola.html">Nossa Escola</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="agri.html">Agrimensura</a></li>
+                                <li><a class="dropdown-item" href="ds.html">Desenvolvimento de Sistemas</a></li>
+                                <li><a class="dropdown-item" href="ccd.html">Edificações</a></li>
+                                <li><a class="dropdown-item" href="enf.html">Enfermagem</a></li>
+                                <li><a class="dropdown-item" href="med.html">Mecânica</a></li>
+                                <li><a class="dropdown-item" href="prod.html">Prótese dentária</a></li>
+                                <li><a class="dropdown-item" href="qpd.html">Qualidade</a></li>
+
+                                <li><hr class="dropdown-divider" href=""></hr></li>
+
+                                <li><a class="dropdown-item" href="est.html">Estágios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Fim navbar-->
+
+        <!--Início do container-->
+        <div class="container cursosContainer">
+            <h6 class="display-6">
+                <i class="bi bi-laptop"></i> Desenvolvimento de Sistemas
+            </h6>
+            <p class="lead">Informações gerais</p>
+
+            <!--Início accordion-->
+            <div class="accordion accordion-flush" id="accordionInfoCurso">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h3 class="display-6">O curso</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionInfoCurso">
+                        <div class="accordion-body">
+                            <h6>Objetivo</h6>
+                            Formar  profissional atualizado, com visão crítica, pautada pela multidisciplinaridade, pelo raciocínio lógico e pelo método científico. Além de um cidadão ético e preparado para seguir os estudos na Academia, pretende-se que este seja versátil, consciente e responsável, tenha  visão de futuro,  perfil integrador, inovador e criativo para a identificação e resolução de problemas, com atuação empreendedora, colaborativa e abrangente no atendimento às demandas do mundo do trabalho e da sociedade.
+                            
+                            <br><br>
+                            <h6>Perfil do Profissional</h6>
+                            O Técnico em Desenvolvimento de Sistemas busca inovações no desenvolvimento de software para as mais diversas áreas do mercado; desenvolve aplicações desktop, web e para dispositivos móveis por meio de  métodos de análise, projeto e programação envolvendo modelagem e acesso a banco de dados, além de testes em programas de computador.
+                            
+                            <br><br>
+                            <h6>Áreas de Atuação</h6>
+                            O profissional de Desenvolvimento de Sistemas poderá atuar na área de Tecnologia da Informação de empresas privadas ou governamentais, ou mesmo de forma autônoma, empreendendo seu próprio negócio. Poderá desempenhar inúmeros papéis no processo de desenvolvimento de software, como análise, projeto, implementação, testes e implantação de sistemas, além de treinamento e suporte aos usuários.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h3 class="display-6">Disciplinas</h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionInfoCurso">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Análise e Projeto de Sistemas de informação</li>
+                                <li>Banco de dados</li>
+                                <li>Desenvolvimento de Aplicações Desktop</li>
+                                <li>Desenvolvimento de Aplicações Web I, II e III</li>
+                                <li>Desenvolvimento de Aplicações Móveis</li>
+                                <li>Lógica de Programação</li>
+                                <li>Projeto Integrador I e II</li>
+                                <li>Tópicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim accordion-->
+        </div>
+        <!--Fim do container-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

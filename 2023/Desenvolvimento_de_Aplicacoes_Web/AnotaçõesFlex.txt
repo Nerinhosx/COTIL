@@ -1,0 +1,22 @@
+Redr_vasco e Redr_flamengo: 15 - 20 / 24-26;
+
+No CSS do body, removeu-se o text-align: center e substituiu-se por display: flex, flex-direction: column, justify-content: center, align-items: center e height: 90vh.
+No style geral, removeu-se a classe .tit1.
+No CSS da classe .tit, modificou-se o padding-top para o valor 0% e removeu-se o text-align:center.
+
+CSS/Style_vasco_titulo_subtitulo: 16 - 18;
+
+No CSS do ID menu1 adicionou-se as propriedades:
+1. display: flex;
+2. flex-direction: row;
+3. justify-content: center;
+
+=======================================================================================================================================================================
+Index_vasco: 14-36; Index_Flamengo: 12-39
+
+@media print adicionado;
+
+=======================================================================================================================================================================
+StyleVasco_breakpoints.css (1-142) criado na pasta CSS para os 3 medias query;
+
+Index_Flamengo: 42-241;{mediaquery adicionado}

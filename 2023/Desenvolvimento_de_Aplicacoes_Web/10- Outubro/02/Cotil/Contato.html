@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COTIL - UNICAMP</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <!--Início navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Imagens/Logo.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index_BootstrapCotil.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nossaEscola.html">Nossa Escola</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="agri.html">Agrimensura</a></li>
+                                <li><a class="dropdown-item" href="Cursos/ds.html">Desenvolvimento de Sistemas</a></li>
+                                <li><a class="dropdown-item" href="ccd.html">Edificações</a></li>
+                                <li><a class="dropdown-item" href="enf.html">Enfermagem</a></li>
+                                <li><a class="dropdown-item" href="med.html">Mecânica</a></li>
+                                <li><a class="dropdown-item" href="prod.html">Prótese dentária</a></li>
+                                <li><a class="dropdown-item" href="qpd.html">Qualidade</a></li>
+
+                                <li><hr class="dropdown-divider" href=""></hr></li>
+
+                                <li><a class="dropdown-item" href="est.html">Estágios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Fim navbar-->
+
+        <!--Início do container-->
+        <div class="container cursosContainer">
+            <h6 class="display-6">
+                <i class="bi bi-send"></i>Contato
+            </h6>
+            <p class="lead">Preencha o formulário abaixo:</p>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Nome:</label><br>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <label class="form-label">Email:</label><br>
+                        <input type="email" class="form-control" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 mb-3">
+                        <label class="form-label">Telefone:</label><br>
+                        <input type="tel" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 mb-3">
+                        <label class="form-label">Estado:</label>
+                        <select class="form-select" required>
+                            <option></option>
+                            <option>MG</option>
+                            <option>RJ</option>
+                            <option>SP</option>
+                        </select>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 mb-3">
+                        <label class="form-label">CEP:</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label class="form-label">Mensagem:</label>
+                        <textarea class="form-control" required></textarea>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-send"></i> Enviar
+                        </button>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-x-circle"></i> Limpar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--Fim do container-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+        </script>
+</body>
+</html>

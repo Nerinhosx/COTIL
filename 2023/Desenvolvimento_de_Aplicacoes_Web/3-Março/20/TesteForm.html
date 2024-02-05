@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+    </head>
+    <body>
+
+        <h1>Formulário - Cadastro de Funcionário</h1>
+
+        <form>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" size="40" minlength="3" maxlength="30" required placeholder="Digite seu nome" name="nome" id="nome">
+
+            <br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" size="20" min="18" max="60" required placeholder="Informe sua idade" name="idade" id="idade" step=2>
+
+            <br><br>
+
+            <label for="cargo">Cargo:</label><br>
+            <input type="text" size="25" name="cargo" id="cargo" value="Professor(a)" readonly>
+
+            <br><br>
+
+            <label for="cargo1">Cargo:</label><br>
+            <input type="text" size="25" name="cargo1" id="cargo1" value="Professor(a)" disabled>
+
+            <br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" size="30" minlength="8" maxlength="15" name="senha" id="senha" required>
+
+            <br><br>
+
+            <label for="sexo">Sexo:</label><br>
+            M <input type="radio" name="sexo" id="sexo" value="M">
+            F <input type="radio" name="sexo" id="sexo" value="F">
+
+            <br><br>
+
+            <label >Horário:</label><br>
+             <input type="checkbox" name="manhã"> Manhã
+             <input type="checkbox" name="tarde" checked> Tarde
+             <input type="checkbox" name="noite"> Noite
+
+             <br><br>
+
+             <label for="corCamiseta">Cor da camiseta:<br></label>
+             <input type="color" name="corCamiseta" id="corCamiseta">
+
+             <be><br>
+
+                <fieldset>
+                    <legend align="center">Datas</legend>
+
+                    <labrel for="dataNasc">Data Nascimento:</labrel>
+                    <input type="date" name="dataNasc" id="dataNasc">
+
+                    <br><br>
+
+                    <labrel for="dataHoraCad">Data e hora do cadastro:</labrel>
+                    <input type="datetime-local" name="dataHoraCad" id="dataHoraCad">
+
+                    <br><br>
+
+                    <labrel for="horaCad">Horário do cadastro:</labrel>
+                    <input type="time" name="horaCad" id="horaCad">
+
+                    <br><br>
+
+                    <labrel for="mesEncerra">Mês de encerramento do contrato:</labrel>
+                    <input type="month" name="mesEncerra" >
+
+                    <br><br>
+
+                    <labrel for="semanaFinal">Semana final de Aula:</labrel>
+                    <input type="week" name="semanaFinal">
+
+                </fieldset>
+
+                <br><br>
+                E-mail:<br>
+                <input type="email" placeholder="e-mail" name="email" id="email" required>
+
+                <br><br>
+
+                Site:<br>
+                <input type="url" placeholder="seu site" name="site" id="site">
+
+                <br><br>
+                Capacitação:<br>
+                <input type="range" min="0" max="5" name="capacitacao" id="capacitacao">
+
+                <br><br>
+                Foto:<br>
+                <input type="file" name="foto" id="foto" acept="image/*">
+
+                <br><br>
+                Curso:<br>
+
+                <select name="curso" id="curso">
+                    <option></option>
+                    <option value="Informática">Informática</option>
+                    <option value="Edificações">Edificações</option>
+                    <option value="Geomática">Geomática</option>
+                    <option value="Mecânica" >Mecânica</option>
+                    <option value="Enfermagem">Enfermagem</option>
+                </select>
+
+                <br><br>
+                Áreas preferidas (até 2):<br>
+
+                <select name="areas" id="areas" size="3" multiple>
+                    <option value="Exatas">Exatas</option>
+                    <option value="Humanas">Humanas</option>
+                    <option value="Biológicas">Biológicas</option>
+                </select>
+
+                <br><br>
+                Veículo que utilizará no campus:<br>
+
+                <select id="veiculo" name="veiculo">
+                    <optgroup label="Carros">
+                        <option value="GM">GM</option>
+                        <option value="VW">VW</option>
+                        <option value="Renault">Renault</option>
+                    </optgroup>
+                
+                    <optgroup label="Motos">
+                        <option value="Honda">Honda</option>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Suzuki">Suzuki</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+                Observações:<br>
+                <textarea rows="15" cols="50" spellcheck="true"></textarea>
+
+            <br><br>
+            <input type="button" value="Testar" onclick="alert('Testando 1 2 3...');">
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+
+        </form>
+
+    </body>
+</html>

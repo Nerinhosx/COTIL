@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exemplo JavaScript interno</title>
+
+        <script type="text/javascript">
+            
+            function msg(){
+                alert("Você clicou no botão.");
+            }
+
+            function mudarCor(){
+                document.getElementById("titulo").style.color = "white";
+                document.getElementById("titulo").style.backgroundColor = "darkred";
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1 id="titulo">Meu primeiro JavaScript.</h1>
+        <input type="button" value="Mudar cor" onclick="mudarCor();">
+    </body>
+</html>

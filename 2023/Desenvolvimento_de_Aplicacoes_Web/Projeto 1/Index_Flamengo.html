@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Página do Flamengo</title>
+	<link rel="icon" href="Multimídia/Imagem/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/Style_flamengo.css">
+
+	<style type="text/css">
+
+		@media print{
+				#menu{
+					display: none;
+				}
+
+				.editftsR{
+					display: none;
+				}
+
+				.editftsL{
+					display: none;
+				}
+
+				#t1{
+					padding-top: 0px;
+					color: black;
+				}
+
+				#uniforme{
+					padding-top: 0px;
+					padding-bottom: 2px;
+				}
+
+
+				audio{
+					display: none;
+				}
+			}
+
+
+		@media (min-width:320px) and (max-width:568px){
+
+
+			img{
+				width: 80px;
+				height: 80px;
+				
+
+			}
+
+			figcaption{
+				display: none;
+			}
+
+			table{
+				width: 90%;
+			}
+
+			div.extra{
+				height: 1600px;
+			}
+
+			#musica{
+				width: 60%;
+			}
+
+			#uniforme{
+				height: 50%;
+			}
+
+			#hinoflamengo{
+				font-size: small;
+				margin-top: 0px;
+				height: 80%;
+
+			}
+
+			#mascotes{
+				height: 15%;
+			}
+
+			#hino{
+				height: 50%;
+				width: 48%;
+			}
+
+			.temporada{
+				width: 20%;
+			}
+
+			.editftsR{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 100px;
+				height: 100px;
+				border: outset black 2px;
+				border-radius: 10px;
+				margin-right: 5px;
+				padding-right: 5px;
+			}
+
+			.editftsL{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 100px;
+				height: 100px;
+				border: outset black 2px;
+				border-radius: 10px;
+				margin-right: 10px;
+				margin-left: 0px;
+			}
+		}
+
+		@media (min-width:768px) and (max-width:1024px){
+
+
+			img{
+				width: 150px;
+				height: 150px;	
+			}
+
+			figcaption{
+				display: none;
+			}
+
+			table{
+				width: 90%;
+			}
+
+			div.extra{
+				height: 1000px;
+			}
+
+			.temporada{
+				width: 20%;
+			}
+
+			.editftsR{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 170px;
+				height: 170px;
+				border: outset black 4px;
+				border-radius: 30px;
+				margin-right: 5px;
+				padding-right: 5px;
+			}
+
+			.editftsL{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 170px;
+				height: 170px;
+				border: outset black 4px;
+				border-radius: 20px;
+				margin-right: 10px;
+				margin-left: 0px;
+			}
+
+			#mascotes{
+				height: 15%;
+			}
+
+			#hino{
+				height: 70%;
+				width: 48%;
+			}
+		}
+
+		@media (min-width:480px) and (max-width:854px){
+
+			#menu{
+				font-size: small;
+			}
+
+			img{
+				width: 170px;
+				height: 170px;
+				
+
+			}
+
+			figcaption{
+				display: none;
+			}
+
+			table{
+				width: 90%;
+			}
+
+			div.extra{
+				height: 1600px;
+			}
+
+			.temporada{
+				width: 20%;
+			}
+
+			.editftsR{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 190px;
+				height: 190px;
+				border: outset black 6px;
+				border-radius: 30px;
+				margin-right: 5px;
+				padding-right: 5px;
+			}
+
+			.editftsL{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 190px;
+				height: 190px;
+				border: outset black 6px;
+				border-radius: 20px;
+				margin-right: 10px;
+				margin-left: 0px;
+			}
+
+			#mascotes{
+				margin-top: 10px;
+			}
+
+			#hinoflamengo{
+				margin-top: 10px;
+			}
+		}	
+	</style>
+</head>
+<body>
+	<div id="menu">
+	<a href="Index_vasco.html" accesskey="f" >União Flasco</a>
+	<span style="font-size: small;color: white;">(Alt + Shift + f)</span>
+	|
+	<a href="#t1" accesskey="i">Início</a>
+	<span style="font-size: small;color: white;">(Alt + i)</span>
+	|
+	<a href="#hist" accesskey="h">História</a>
+	<span style="font-size: small; color: white;">(Alt + h)</span>
+	|
+	<a href="#jog" accesskey="j">Jogadores</a>
+	<span style="font-size: small;color: white;">(Alt + j)</span>
+	|
+	<a href="#ex" accesskey="e">Extras</a>
+	<span style="font-size: small;color: white;">(Alt + Shift + e)</span>
+	|
+	<a href="Redr_flamengo.html" accesskey="c">Cadastre-se</a>
+	<span style="font-size: small;color: white;">(Alt + c)</span>
+	</div>
+	<br>
+
+	<div id="t1">
+		PÁGINA DO FLAMENGO
+	</div>
+
+<div class="sep">
+	<h1 id=hist align="center"><div class="tit">História</div></h1>
+<p>
+	<div class="editftsR">
+	<figure>
+		<img src="Multimídia/Imagem/flamengo.png" alt="Bandeira do Flamengo" title="Bandeira do Club de Regatas Flamengo" width="350px" height="350px">
+		<figcaption align="center">Logo do Club de Regatas Flamengo</figcaption>
+	</figure>
+	</div>
+</p>
+<p>
+	Em fins do século XIX o remo dominava o Rio de Janeiro. O futebol começava apenas a aparecer em alguns clubes, mas ainda era olhado com certo temor, pois não estava sendo recebido com entusiasmo pela sociedade carioca. A criação de um grupo organizado com o objetivo de disputar competições de remo com clubes de outros bairros surgiu entre jovens do bairro do Flamengo, no Café Lamas, no Largo do Machado.
+
+Nestor de Barros, José Agostinho Pereira da Cunha, Felisberto Laport, Augusto Lopes, Mário Spindola e José Félix da Cunha Meneses compraram um barco, chamaram-no de "Pherusa" e o reformaram.
+
+Em 6 de outubro de 1895 os antes citados, juntamente com Maurício Rodrigues Pereira e Joaquim Bahia, saíram da Ponta do Caju, e com o tempo desfavorável, foram rumo à Praia do Flamengo, mas o vento fez o barco virar. Bahia nadou até a praia para conseguir ajuda e chegou algumas horas depois, mas a chuva parou rapidamente e outro barco, o "Leal", resgatou os jovens e o que tinha restado da Pherusa. Então foi iniciada uma nova reforma da embarcação, mas ela foi roubada e desapareceu.
+</p>
+
+<p>
+Um novo barco foi comprado e recebeu o nome de "Scyra". Na noite de 17 de novembro de 1895, muita gente estava em um dos corredores da casa número 22 da Praia do Flamengo, onde Nestor de Barros morava num dos quartos. Lá, há muito tempo, já haviam abrigado "Pherusa", e agora guardavam "Scyra". A reunião teve por objetivo a fundação do Grupo de Regatas do Flamengo. Naquela mesma noite foi eleita a primeira diretoria:
+<ul>
+<li>Domingos Marques de Azevedo; presidente</li>
+<li>Francisco Lucci Colas; vice-presidente</li>
+<li>Nestor de Barros; secretário</li>
+<li>Felisberto Cardoso Laport; tesoureiro</li>
+</ul>
+</p>
+
+<div class="editftsL">
+	<figure>
+		<img src="Multimídia/Imagem/flamengo1896.jpg" alt="Flamengo de 1896" title="Flamengo de 1896" width="200px" height="200px">
+	</figure>
+	</div>
+<p>
+Além dos eleitos, foram destacados como sócios-fundadores, José Agostinho Pereira da Cunha, Napoleão Coelho de Oliveira, Mário Espínola, José Maria Leitão da Cunha, Carlos Sardinha, Maurício Rodrigues Pereira, Desidério Guimarães, Eduardo Sardinha, Emido José Barbosa, José Félix Cunha Meneses, George Leuzinger, Augusto Lopes da Silveira, João de Almeida Lustosa e José Augusto Chairéo, sendo que os três últimos faltaram à reunião, mas foram considerados sócios-fundadores. Na oportunidade ficou estabelecido que a data oficial da fundação do clube seria 15 de novembro, feriado nacional.
+</p>
+
+<p>
+	As cores iniciais foram azul e ouro em listras horizontais bem largas, entretanto, em 1898, por proposta de Nestor de Barros, houve mudança para as atuais: vermelho e preto.
+</p>
+
+<p>
+	Novos barcos foram sendo comprados e o Mengo começou a destacar-se nas competições. Na I Regata do Campeonato Náutico do Brasil, no dia 5 de junho de 1898, conquistou a sua primeira vitória, com "Irerê", uma baleeira a dois remos. Anteriormente o Flamengo só havia obtido colocações secundárias e muitos segundos lugares, o que lhe valeu, inclusive, o apelido de "Clube de Bronze". Em 1902, diante de seu crescimento, houve a transformação para Clube de Regatas do Flamengo.
+</p>
+
+<p>
+	Uma curiosidade na história do Clube de Regatas do Flamengo é que seus atletas já haviam se arriscado a praticar o futebol. No dia 25 de outubro de 1903, antes da fundação do departamento de futebol do Flamengo, os remadores flamenguistas se reuniram com os colegas de esporte do Botafogo para a disputa de um amistoso.
+</p>
+
+<p>
+	Em 1927, um concurso promovido pela água mineral Salutaris e pelo Jornal do Brasil objetivou eleger o "clube mais querido do Brasil". O torcedor deveria escrever o nome do seu time favorito no rótulo da garrafa d'água, ou no cupom impresso no jornal, e envia-lo preenchido para a sede do Jornal do Brasil, no Rio de Janeiro. O vencedor levaria para sua sede a portentosa Taça Salutaris e o "título" de clube mais querido do Brasil. Ao final da apuração, o Flamengo somou 254 850 votos e venceu a disputa. Atualmente, a Taça Salutaris é exibida em local de destaque na sala de troféus do Clube de Regatas do Flamengo, ladeada pela Copa Libertadores da América e pela Taça Intercontinental de 1981.
+</p>
+<div class="editftsR">
+	<figure>
+		<img src="Multimídia/Imagem/flamengo1933.jpg" alt="Flamengo de 1933" title="Flamengo de 1933" width="250px" height="200px">
+	</figure>
+	</div>
+<p>
+	Outro fator que ajudou a popularizar a força do Flamengo pelo país foi a Segunda Guerra Mundial. Com o posicionamento do Brasil como aliado dos Estados Unidos, foram construídas nas cidades de Natal-RN e Belém-PA, pelos americanos, duas antenas de alta captação para pegar sinais enviados dos navios inimigos. Só que as mesmas antenas também permitiram a transmissão de jogos, via rádio, para o Norte e o Nordeste do país.
+</p>
+
+<p>
+	Na época, com o Rio de Janeiro como a capital do país, a importância do que acontecia em terras cariocas era muito alta. Além disso, o rádio era o meio de comunicação mais utilizado para notícias e, claro, transmissão de esportes. Dessa forma, as vitoriosas campanhas rubro-negras nos estaduais do começo da década de 40 se alastrou, ajudando a popularizar o clube.
+
+Em tempos atuais, pesquisas dos mais variados institutos especializados vêm confirmando que o Rubro-Negro é o clube de maior torcida em âmbito estadual e nacional.
+</p>
+
+<p>
+	A partir de 1902 o remo passou a dividir com o futebol a preferência popular. Assim, os associados do Flamengo tornaram-se sócios também do Fluminense para acompanhar o futebol, e os do clube das Laranjeiras vieram para o rubro-negro a fim de acompanhar as regatas. Alberto Borgerth representava bem o exemplo, pois pela manhã remava pelo Flamengo e à tarde jogava pelo seu clube, o Fluminense.
+</p>
+
+<p>
+	Entretanto, em 1911, houve a cisão no Fluminense e muitos jogadores do tricolor vieram para o Rubro-negro, resolvendo em assembleia do dia 8 de novembro de 1911 fundar um departamento de esportes terrestres, com Alberto Borgerth na direção. A briga entre Oswaldo Gomes e muitos dos jogadores do primeiro quadro do Fluminense foi a razão da discórdia. Originalmente pensou-se em uma simples adesão ao Botafogo, mas como o alvinegro, na época, era o grande rival do Tricolor Carioca, a ideia foi logo descartada. Em seguida consideraram a ideia de reforçar o já estabelecido Paysandu, mas também foi vetado, uma vez que o clube era composto exclusivamente de ingleses. Finalmente, surgiu a ideia de Borgerth, de se criar uma seção de futebol no Flamengo. A proposta foi aprovada e consagrada na assembleia do clube, realizada no dia 8.
+</p>
+</div>
+<br><br>
+
+<div class="sep">
+<h1 align="center"><div class="tit">Titulos</div></h1>
+<table align="center"  border="2px" width="90%" id="tabela">
+	<tr>
+		<th align="center" style="background-color: rgba(110, 110, 110, 1); color: azure;">Compêtição</th>
+		<th align="center" style="background-color: rgba(110, 110, 110, 1); color: azure;">Quantidade de Títulos</th>
+		<th class="temporada" style="background-color: rgba(110, 110, 110, 1); color: azure;">Temporadas</th>
+	</tr>
+	<tr>
+		<td>Copa Intercontinental</td>
+		<td align="center">1</td>
+		<td class="temporada">1981</td>
+	</tr>
+	<tr>
+		<td>Copa Libertadores da América</td>
+		<td align="center">3</td>
+		<td class="temporada">1981,2019,2022</td>
+	</tr>
+	<tr>
+		<td>Recopa Sul-Americana</td>
+		<td align="center">1</td>
+		<td class="temporada">2020</td>
+	</tr>
+	<tr>
+		<td>Copa de Ouro Sul-Americana</td>
+		<td align="center">1</td>
+		<td class="temporada">1996</td>
+	</tr>
+	<tr>
+		<td>Copa Mercosul</td>
+		<td align="center">1</td>
+		<td class="temporada">1999</td>
+	</tr>
+	<tr>
+		<td>Campeonato Brasileiro</td>
+		<td align="center">8</td>
+		<td class="temporada">1980,1982,1983,1987,1992,2009,2019,2020</td>
+	</tr>
+	<tr>
+		<td>Copa do Brasil</td>
+		<td align="center">4</td>
+		<td class="temporada">1990,2006,2013,2022</td>
+	</tr>
+	<tr>
+		<td>Supercopa do Brasil</td>
+		<td align="center">2</td>
+		<td class="temporada">2020,2021</td>
+	</tr>
+	<tr>
+		<td>Torneio Rio-São Paulo</td>
+		<td align="center">2</td>
+		<td class="temporada">1940,1961</td>
+	</tr>
+	<tr>
+		<td>Copa dos Campeões Regionais</td>
+		<td align="center">1</td>
+		<td class="temporada">2001</td>
+	</tr>
+	<tr>
+		<td>Copa dos Campeões Mundiais</td>
+		<td align="center">1</td>
+		<td class="temporada">1997</td>
+	</tr>
+	<tr>
+		<td>Taça dos Campeões Estaduais</td>
+		<td align="center">1</td>
+		<td class="temporada">1956</td>
+	</tr>
+	<tr>
+		<td>Taça dos Campeões Brasileiros</td>
+		<td align="center">1</td>
+		<td class="temporada">1992</td>
+	</tr>
+	<tr>
+		<td>Torneio do Povo</td>
+		<td align="center">1</td>
+		<td class="temporada">1972</td>
+	</tr>
+	<tr>
+		<td>Campeonato Carioca</td>
+		<td align="center">37</td>
+		<td class="temporada">1914, 1915, 1920, 1921, 1925, 1927, 1939, 1942, 1943, 1944, 1953, 1954, 1955, 1963, 1965, 1972, 1974, 1978, 1979, 1979, 1981, 1986, 1991, 1996, 1999, 2000, 2001, 2004, 2007, 2008, 2009, 2011, 2014, 2017, 2019, 2020 e 2021</td>
+	</tr>
+	<tr>
+		<td>Taça Guanabara</td>
+		<td align="center">23</td>
+		<td class="temporada">1970, 1972, 1973, 1978, 1979, 1980, 1981, 1982, 1984, 1988, 1989, 1995, 1996, 1999, 2001, 2004, 2007, 2008, 2011, 2014, 2018, 2020 e 2021</td>
+	</tr>
+	<tr>
+		<td>Taça Rio</td>
+		<td align="center">10</td>
+		<td class="temporada">1978, 1983, 1985, 1986, 1991, 1996, 2000, 2009, 2011 e 2019</td>
+	</tr>
+	<tr>
+		<td>Taça da Capital do Rio de Janeiro</td>
+		<td align="center">2</td>
+		<td class="temporada">1991, 1993</td>
+	</tr>
+	<tr>
+		<td>Copa Rio</td>
+		<td align="center">1</td>
+		<td class="temporada">1991</td>
+	</tr>
+	<tr>
+		<td>Torneio Extra do Rio de Janeiro</td>
+		<td align="center">1</td>
+		<td class="temporada">1934</td>
+	</tr>
+	<tr>
+		<td>Torneio Aberto do Rio de Janeiro</td>
+		<td align="center">1</td>
+		<td class="temporada">1936</td>
+	</tr>
+	<tr>
+		<td>Torneio Relâmpago do Rio de Janeiro</td>
+		<td align="center">1</td>
+		<td class="temporada">1943</td>
+	</tr>
+	<tr>
+		<td>Copa Record</td>
+		<td align="center">1</td>
+		<td class="temporada">2005</td>
+	</tr>
+	<tr>
+		<td>Torneio Início do Campeonato Carioca</td>
+		<td align="center">6</td>
+		<td class="temporada">1920, 1920, 1946, 1951, 1952, 1959</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular de Lima (Peru)</td>
+		<td align="center">1</td>
+		<td class="temporada">1952</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular da Argentina</td>
+		<td align="center">1</td>
+		<td class="temporada">1953</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular de Israel</td>
+		<td align="center">1</td>
+		<td class="temporada">1958</td>
+	</tr>
+	<tr>
+		<td>Torneio Hexagonal do Peru</td>
+		<td align="center">1</td>
+		<td class="temporada">1959</td>
+	</tr>
+	<tr>
+		<td>Torneio Octagonal de Verão</td>
+		<td align="center">1</td>
+		<td class="temporada">1961</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular da Tunísia</td>
+		<td align="center">1</td>
+		<td class="temporada">1962</td>
+	</tr>
+	<tr>
+		<td>Troféu Naranja (Espanha)</td>
+		<td align="center">2</td>
+		<td class="temporada">1964, 1986</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular do Equador</td>
+		<td align="center">1</td>
+		<td class="temporada">1966</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular de Marrocos</td>
+		<td align="center">1</td>
+		<td class="temporada">1968</td>
+	</tr>
+	<tr>
+		<td>Torneio Palma de Mallorca (Espanha)</td>
+		<td align="center">1</td>
+		<td class="temporada">1978</td>
+	</tr>
+	<tr>
+		<td>Troféu Rámon de Carranza (Espanha)</td>
+		<td align="center">2</td>
+		<td class="temporada">1979, 1980</td>
+	</tr>
+	<tr>
+		<td>Troféu Ciudad de Santander (Espanha)</td>
+		<td align="center">1</td>
+		<td class="temporada">1980</td>
+	</tr>
+	<tr>
+		<td>Capa Punta del Este (Uruguai)</td>
+		<td align="center">1</td>
+		<td class="temporada">1981</td>
+	</tr>
+	<tr>
+		<td>Torneio Internacional de Nápoles (Itália)</td>
+		<td align="center">1</td>
+		<td class="temporada">1981</td>
+	</tr>
+	<tr>
+		<td>Torneio Air Gabon (Gabão)</td>
+		<td align="center">1</td>
+		<td class="temporada">1987</td>
+	</tr>
+	<tr>
+		<td>Torneio Internacional da Angola</td>
+		<td align="center">1</td>
+		<td class="temporada">1987</td>
+	</tr>
+	<tr>
+		<td>Copa Kirin (Japão)</td>
+		<td align="center">1</td>
+		<td class="temporada">1988</td>
+	</tr>
+	<tr>
+		<td>Troféu Colombino (Espanha)</td>
+		<td align="center">1</td>
+		<td class="temporada">1988</td>
+	</tr>
+	<tr>
+		<td>Torneio de Hamburgo (Alemanha Ocidental)</td>
+		<td align="center">1</td>
+		<td class="temporada">1989</td>
+	</tr>
+	<tr>
+		<td>Capa Mariboro (Estados Unidos)</td>
+		<td align="center">1</td>
+		<td class="temporada">1990</td>
+	</tr>
+	<tr>
+		<td>Taça Libertad (Argentina)</td>
+		<td align="center">1</td>
+		<td class="temporada">1993</td>
+	</tr>
+	<tr>
+		<td>Torneio See'94 (Malásia)</td>
+		<td align="center">1</td>
+		<td class="temporada">1994</td>
+	</tr>
+	<tr>
+		<td>Florida Cup</td>
+		<td align="center">1</td>
+		<td class="temporada">2019</td>
+	</tr>
+	<tr>
+		<td>Torneio Internacional do Rio de Janeiro</td>
+		<td align="center">2</td>
+		<td class="temporada">1954, 1955</td>
+	</tr>
+	<tr>
+		<td>Torneio Internacional do Morumbi</td>
+		<td align="center">1</td>
+		<td class="temporada">1957</td>
+	</tr>
+	<tr>
+		<td>Torneio Internacional de Verão</td>
+		<td align="center">2</td>
+		<td class="temporada">1970, 1972</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular Internacional de Goiás</td>
+		<td align="center">1</td>
+		<td class="temporada">1975</td>
+	</tr>
+	<tr>
+		<td>Torneio Triangular de Curitiba</td>
+		<td align="center">1</td>
+		<td class="temporada">1953</td>
+	</tr>
+	<tr>
+		<td>Torneio Triangular de Goiás</td>
+		<td align="center">1</td>
+		<td class="temporada">1965</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular de Espírito Santo</td>
+		<td align="center">1</td>
+		<td class="temporada">1965</td>
+	</tr>
+	<tr>
+		<td>Torneio 320 Anos de Jundiaí (SP)</td>
+		<td align="center">1</td>
+		<td class="temporada">1975</td>
+	</tr>
+	<tr>
+		<td>Torneio Elma Sereja (DF)</td>
+		<td align="center">1</td>
+		<td class="temporada">1976</td>
+	</tr>
+	<tr>
+		<td>Torneio Inauguração do Estádio José Fragelli em Cuiabá/MT</td>
+		<td align="center">1</td>
+		<td class="temporada">1976</td>
+	</tr>
+	<tr>
+		<td>Torneio Quadrangular de Varginha (MG)</td>
+		<td align="center">1</td>
+		<td class="temporada">1990</td>
+	</tr>
+	<tr>
+		<td>Torneio Cidade de Brasília</td>
+		<td align="center">1</td>
+		<td class="temporada">1997</td>
+	</tr>
+	<tr>
+		<td>Taça Madame Gaby Coelho Netta</td>
+		<td align="center">1</td>
+		<td class="temporada">1916</td>
+	</tr>
+	<tr>
+		<td>Torneio América Fabril</td>
+		<td align="center">2</td>
+		<td class="temporada">1919, 1922</td>
+	</tr>
+</table>
+</div>
+
+<br>
+
+<div class="sep">
+ <h1 align="center" id="jog"><div class="tit">Jogadores</div></h1>
+<table align="center" id="Tajo">
+<tr>
+	<td>
+		<span style="color: black;">Goleiros</span>
+		<ul>
+			<li>Hugo Souza - 45</li>
+			<li>Matheus Cunha - 25</li>
+			<li>Santos - 1</li>
+		</ul>
+		<span style="color: black;">Zagueiros</span>
+		<ul>
+			<li>Rodrigo caio - 3</li>
+			<li>Léo Pereira - 4</li>
+			<li>David Luiz - 23</li>
+			<li>Fabrício Bruno - 15</li>
+			<li>Pablo - 30</li>
+		</ul>
+		<span style="color: black;">Laterais esq.</span>
+		<ul>
+			<li>Filipe Luís - 16</li>
+			<li>Ayrton Cunha - 6</li>
+		</ul>
+		<span style="color: black;">Laterais dir.</span>
+		<ul>
+			<li>Matheuzinho - 34</li>
+			<li>Varela - 2</li>
+		</ul>
+	</td>
+	
+	<td>
+		<span style="color: black;">Volantes</span>
+		<ul>
+			<li>Arturo Vidal - 32</li>
+			<li>Thiago Maia - 8</li>
+			<li>Erick - 5</li>
+			<li>Gerson - 20</li>
+		</ul>
+		<span style="color: black;">Meias</span>
+		<ul>
+			<li>Everton Ribeiro - 7</li>
+			<li>De Arrascaeta - 14</li>
+			<li>Victor Hugo - 29</li>
+			<li>Matheus França - 42</li>
+		</ul>
+		<span style="color: black;">Atacantes</span>
+		<ul>
+			<li>Gabi - 10</li>
+			<li>Bruno Henrique - 27</li>
+			<li>Pedro - 9</li>
+			<li>Marinho - 31</li>
+			<li>Everton - 11</li>
+		</ul>
+	</td>
+</tr>
+</table>
+</div>
+
+
+<div class="sep extra">
+<h1 align="center" id="ex" class="tit">Extras</h1>
+
+<div id="uniforme">
+	<h2>Uniformes</h2>
+<figure>
+	<img src="Multimídia/Imagem/flacamisa1.png" class="camisa">
+	<img src="Multimídia/Imagem/flacamisa2.png" class="camisa">
+</figure>
+</div>
+
+	<div id="hino">
+		<h2>Hino</h2>
+
+	<audio controls id="musica">
+		<source src="Multimídia/Áudio/hino-do-flamengo.wav" type="audio/wav">
+	</audio>
+
+	<p id="hinoflamengo">
+	Uma vez Flamengo<br>
+	Sempre Flamengo<br>
+	Flamengo sempre eu hei de ser<br>
+	É meu maior prazer vê-lo brilhar<br>
+	Seja na terra, seja no mar<br>
+	Vencer, vencer, vencer<br>
+	Uma vez Flamengo<br>
+	Flamengo até morrer<br>
+	Na regata, ele me mata<br>
+	Me maltrata, me arrebata<br>
+	Que emoção no coração<br>
+	Consagrado no gramado<br>
+	Sempre amado, o mais cotado<br>
+	No Fla-Flu é o: Ai, Jesus!<br>
+	Eu teria um desgosto profundo<br>
+	Se faltasse o Flamengo no mundo<br>
+	</p>
+	</div>
+
+	<div id="mascotes">
+		<figure>
+			<img src="Multimídia/Imagem/mascote-flamengo.png" id="mascote">
+		</figure>
+		<h2 style="text-align: center;">Mascote</h2>
+		<p>A escolha do urubu como mascote do Flamengo ocorreu como uma forma de enfrentamento às provocações de outros clubes e torcedores, que usavam o termo “urubu” como uma ofensa racista. Os flamenguistas, em vez de se abaterem com o preconceito, adotaram o urubu como símbolo de resistência e orgulho.</p>
+	</div>
+</div>
+
+</body>
+</html>

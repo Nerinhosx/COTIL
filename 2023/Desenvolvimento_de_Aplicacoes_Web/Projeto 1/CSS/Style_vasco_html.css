@@ -1,0 +1,63 @@
+body{
+	margin-top: 0%;
+	background: linear-gradient(to top left, dimgray, gray, dimgray);
+	font-family: 'Times New Roman', serif;
+	color: rgba(237,237,237,1);
+
+	z-index: 1;
+
+	text-indent: 15px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+figcaption{
+	font-style: italic;
+}
+
+li{
+	list-style-position: inside;
+	list-style-image: url("../Multimídia/Imagem/vascoLista2.jpg");
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+td{
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+
+	border: black 2px solid;
+}
+
+th{
+	border: black 4px solid;
+
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+a:link{
+	color: whitesmoke;
+	text-decoration: none;
+
+	transition-duration: 1s;
+}
+
+a:visited{
+	color: lavender;
+	text-decoration: none;
+
+	transition-duration: 1s;
+}
+
+a:hover{
+	color: darkgreen;
+	text-decoration: underline;
+
+	transition-duration: 1s;
+}

@@ -1,0 +1,17 @@
+
+header, footer {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ background-color: #cccccc;
+ border: 1px solid #000000;
+ text-align: center;
+ height: 10vh;
+}
+
+.principal {
+  background-color: #ffffff;
+  height: 80vh;
+  padding-top: 15px; 
+  border: 1px solid #000000;
+  text-align: center;  
+}

@@ -1,0 +1,101 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Curso de Bootstrap 4 da TreinaWeb</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+
+    <style>
+      .formata-div {
+        border: 1px solid black;
+        background-color: yellow;
+      }
+
+      .formata-row {
+        background-color: gray;  
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+
+   
+    <div class="container">
+
+      <h3>Alinhamento Vertical - todas as colunas da mesma linha com mesmo alinhamento</h2>
+
+      <div class="row align-items-start formata-row">
+        <div class="col-md-4 formata-div">One of three columns</div>
+        <div class="col-md-4 formata-div">One of three columns</div>
+        <div class="col-md-4 formata-div">One of three columns</div>
+      </div>
+ 
+      <br>
+
+      <div class="row align-items-center formata-row">
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">ne of three columns</div>
+      </div>
+
+      <br>
+
+      <div class="row align-items-end formata-row">
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+      </div>
+
+    </div>    
+
+    <br><br>
+
+    <div class="container">
+
+      <h3>Alinhamento Vertical - cada colunas da mesma linha com um alinhamento</h2>    
+
+      <div class="row formata-row">
+        <div class="col formata-div align-self-start">One of three columns</div>
+        <div class="col formata-div align-self-center">One of three columns</div>
+        <div class="col formata-div align-self-end">One of three columns</div>
+      </div>
+
+    </div>    
+
+    <br><br>
+
+    <div class="container">
+
+      <h3>Alinhamento Horizontal - vale para a linha toda</h2>  
+
+      <div class="row  formata-row justify-content-start">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-center">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-end">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-around">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-between">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+   </div>    
+       
+  </body>
+</html>

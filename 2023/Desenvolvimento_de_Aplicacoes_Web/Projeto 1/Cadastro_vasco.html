@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Página de cadastro</title>
+		<link rel="icon" href="Multimídia/Imagem/Forms_vasco.png">
+
+		<style type="text/css">
+
+			.caixa{
+				width: 20%;
+				height: auto;
+
+				border: black 3px outset;
+				border-top-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+
+				margin-top: 7%;
+				margin-left: 5%;
+
+				background: linear-gradient(to top left, rgb(20, 20, 20), whitesmoke, rgb(20, 20, 20));
+			}
+
+			body{
+				background-image: url("Multimídia/Imagem/vasco_maior.png");
+				background-position: center 10vh;
+				background-repeat: no-repeat;
+				background-color: rgba(0, 0, 0, 0.8);
+
+				width: 98%;
+				height: 97%;
+			}
+
+			label {
+				color: black;
+				font-weight: bold;
+			}
+
+			form{
+				padding: 5%;
+			}
+
+			input{
+				margin-bottom: 8%;
+				color: black;
+
+				background-color: rgb(190, 190, 190);
+
+				transition-duration: 0.15s;
+			}
+
+			input:focus{
+				background-color: rgb(10, 10, 10);
+				color: ghostwhite;
+
+				transition-duration: 0.15s;
+			}
+
+			input:hover{
+				background-color: rgb(50, 50, 50);
+				color: ghostwhite;
+
+				transition-duration: 0.15s;
+			}
+
+			input[type="button"]{
+				background-color: rgb(80, 80, 80);
+
+				box-align: center;
+
+				margin-left: 23%;
+
+				border-radius: 8%;
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="button"]:hover{
+				transform: scale(1.1, 1.1);
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="button"]:focus{
+				border: inset;
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="submit"]{
+				background-color: rgb(80, 80, 80);
+
+				box-align: center;
+
+				margin-left: 10%;
+
+				border-radius: 8%;
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="submit"]:hover{
+				transform: scale(1.1, 1.1);
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="submit"]:focus{
+				border: inset;
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="date"]:hover{
+				background-color: rgb(80, 80, 80);
+
+				transition-duration: 0.15s;
+			}
+
+			h1{
+				color: whitesmoke;
+
+				transition-duration: 0.75s;
+			}
+
+			h1:hover{
+				text-shadow: black 4px 4px 15px;
+
+				transition-duration: 0.75s;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<h1 align="center">Boas-vindas à página de cadastro</h1>
+		<div class="caixa">
+			<form>
+		        
+				<label for="nome">Nome (completo): </label>
+				<input id="nome" name="nome" type="text" placeholder="Ex: José da Silva" required minlength="8" tabindex="1">
+				<br>
+		        
+				<label for="email">E-mail: </label>
+				<input id="email" type="email" required placeholder="Ex: vasco@email.com" tabindex="2">
+				<br>
+		        
+				<label for="senha">Senha: </label>
+				<input id="senha" type="password" minlength="5" required placeholder="Ex: senha123" tabindex="3">
+				<br>
+		        
+				<label>Sexo: </label>
+				<input name="sexo" id="f" type="checkbox" value="f"><label for="f">F</label>
+				<input name="sexo" id="m" type="checkbox" value="m"><label for="m">M</label>
+				<br>
+		        
+				<label for="aniversario">Data de nascimento: </label>
+				<input id="aniversario" type="date" required tabindex="4">
+				<br>
+		        
+				<label for="idade">Idade: </label>
+				<input id="idade" type="number" max="100" required placeholder="Ex: 29" tabindex="5">
+				<br>
+
+				<label for="estado">Estado: </label>
+				<input type="text" id="estado" required placeholder="Ex: SP" minlength="2" tabindex="6">
+
+				<a href="Index_vasco.html"><input type="button" value="Voltar" tabindex="7"></a>
+
+				<input type="submit" value="Enviar" tabindex="8">
+			</form>
+		</div>
+	</body>
+</html>

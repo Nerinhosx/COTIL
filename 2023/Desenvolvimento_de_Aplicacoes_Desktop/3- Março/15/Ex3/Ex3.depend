@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1678901453 source:c:\users\aluno\desktop\ex3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<time.h>
+

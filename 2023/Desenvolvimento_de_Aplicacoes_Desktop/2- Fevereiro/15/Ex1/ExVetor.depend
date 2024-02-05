@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1676479067 source:c:\users\aluno\desktop\exvetor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

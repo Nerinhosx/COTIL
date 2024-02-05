@@ -1,0 +1,67 @@
+#menu1{
+	background-color: rgba(128,128,128,0.96);
+	width: 98.4%;
+	padding-left: 0px;
+	padding-top:5px;
+	padding-bottom: 5px;
+
+	position: fixed;
+
+	border-bottom: ridge black;
+	border-left: ridge black;
+	border-right: ridge black;
+
+	z-index: 2;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#t1{
+	background-color: black;
+	width: 100%;
+	color: white;
+	text-align: center;
+
+	margin-top: 2.5vh;
+	margin-bottom: 3vh;
+
+	font-size: xx-large;
+
+	padding-top: 30px;
+}
+
+#t2{
+	font-weight: 900;
+	font-size: x-large;
+	text-align: center;
+
+	color: black;
+	background-color: lightgrey;
+}
+
+.St{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+
+	color: black;
+
+	transition-duration: 0.5s;
+}
+
+.St:hover{
+	text-shadow: black 2px 2px 5px;
+
+	transition-duration: 0.5s;
+}
+
+.Sst{
+	font-size: 25px;
+	color: lightgray;
+
+	text-shadow: darkgray 1px 1px 3px;
+
+	text-align: center;
+}

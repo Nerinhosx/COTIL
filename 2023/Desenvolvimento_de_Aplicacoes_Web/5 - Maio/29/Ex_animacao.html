@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Teste - Animação</title>
+
+		<style>
+			img{
+				margin-top: 15%;
+				float: left;
+				animation: animacao1 20s;
+				animation-fill-mode: forwards;
+			}
+
+			@keyframes animacao1{
+				0%{
+					margin-left: 1%;
+					margin-top: 1%;
+					opacity: 0;
+				}
+				33%{
+					margin-left: 15%;
+					margin-top: 15%;
+					opacity: 0.3;
+				}
+				67%{
+					margin-left: 35%;
+					margin-top: 35%;
+					opacity: 0.6;
+				}
+				100%{
+					margin-left: 1%;
+					margin-top: 1%;
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<img src="Multimídia/Imagem/favicon.ico"></img>				
+		<img src="Multimídia/Imagem/vasco.jpg"></img>
+
+	</body>
+</html>

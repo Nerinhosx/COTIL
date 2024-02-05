@@ -1,0 +1,27 @@
+.icones{
+    color: red;
+}
+
+.centralizaCont{
+    text-align: center;
+}
+
+.cursosContainer{
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.alturaCardsCursos{
+    height: 160px;
+}
+
+.alturaImgsCursos{
+    height: 270px;
+}
+
+.marginCards{
+    margin-bottom: 20px;
+}
+
+.carouselNossaEscola{width: 80%;}

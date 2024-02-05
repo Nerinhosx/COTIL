@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cadastro de Usuário</title>
+
+		<style>
+
+			body{
+				font-family: arial;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+
+			.box{
+				border: 1px solid gray;
+				border-radius: 5px;
+				max-width: 500px;
+				box-shadow: 5px 5px 5px lightgray;
+				padding: 30px;
+			}
+
+			label{
+				color: green;
+				font-weight: bold;
+			}
+
+			.formataInput{
+				width: 100%;
+				height: 30px;
+				margin-top: 5px;
+				background-color: lightgray;
+				border-radius: 10px;
+
+				margin-bottom: 15px;
+			}
+
+			input:hover{
+				background-color: gray;
+				border-color: green;
+			}
+
+			input:focus{
+				background-color: rgb(240, 240, 240);
+			}
+
+			input:hover::placeholder{
+				color: white;
+			}
+
+			input:focus::placeholder{
+				color: inherit;
+			}
+
+			input[type="submit"]{
+				/*background-color: green;*/
+				background: linear-gradient(to left, lightgreen, green, lightgreen);
+				width: 100%;
+				color: white;
+				font-size: 20px;
+				padding: 10px;
+				height: 50px;
+
+				border-radius: 10px;
+				/*border-bottom: 5px solid green;
+				border-right: 5px solid green;
+
+				border-top: 5px solid lightgreen;
+				border-left: 5px solid lightgreen;*/
+			}
+
+			input[type="submit"]:hover{
+				background: linear-gradient(to right, lightgreen, green);
+
+				/*border-bottom: 5px solid lightgreen;
+				border-right: 5px solid lightgreen;
+
+				border-top: 5px solid green;
+				border-left: 5px solid green;*/				
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="box">
+
+			<h1>Cadastro de Usuário</h1>
+	    
+			<form>
+		        
+				<label for="nome">Nome</label>
+				<input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5" class="formataInput">
+				<br><br>
+		        
+				<label for="email">E-Mail</label>
+				<input id="email" type="email" required placeholder="nome@email.com" class="formataInput">
+				<br><br>
+		        
+				<label for="senha">Senha</label>
+				<input id="senha" type="password" minlength="6" required class="formataInput">
+				<br><br>
+		        
+				<label>Escolha suas frutas favoritas</label>
+				<input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label>
+				<input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label>
+				<input id="banana" type="checkbox" value="banana"><label for="banana">Banana</label>
+				<br><br>
+		        
+				<label>Sexo</label>
+				<input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+				<input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+				<br><br>
+		        
+				<label for="cor">Escolha uma cor</label>
+				<input id="cor" type="color" class="formataInput">
+				<br><br>
+		        
+				<label for="aniversario">Data de Aniversário</label>
+				<input id="aniversario" type="date" required class="formataInput">
+				<br><br>
+		        
+				<label for="idade">Idade</label>
+				<input id="idade" type="number" min="10" class="formataInput">
+				<br><br>
+		        
+				<label for="nota">Nota</label>
+				<input id="nota" type="range" min="0" max="10" class="formataInput">
+				<br><br>
+		        
+				<label for="pagina">Página</label>
+				<input id="pagina" type="url" placeholder="https://suapagina.com" class="formataInput">
+				<br><br>
+		        
+				<input type="submit" value="Cadastrar" class="formataInput">
+
+			</form>
+
+		</div>
+
+	</body>
+</html>

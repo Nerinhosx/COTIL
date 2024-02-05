@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Array</title>
+
+        <script type="text/javascript">
+            //Criando o Array, definindo o tamanho
+            var a = new Array(10);
+
+            a[0] = "xyz";
+            a[1] = true;
+            a[2] = 1.500;
+            console.log(a);
+
+            //declarando um Array na forma literal
+            var nomes = ["Felipe"];
+            console.log("-----Array inicial-----");
+            console.log(nomes);
+            console.log(nomes.length);
+
+            //Adicionar um elemento no final de um Array - Push
+            nomes.push("Kennedy");
+            console.log("-----------------------");
+            console.log(nomes);
+            console.log(nomes.length);
+
+            //repare que 12/false não são strings, mas mesmo assim o código rodou
+            nomes.push(12);
+            nomes.push(false);
+            console.log(nomes);
+            console.log(nomes.length);
+
+            //Adicionar um elemento no início de um Array - Unshift
+            nomes.unshift("Ana");
+            console.log(nomes);
+            //console.log(nomes.length);
+
+            //deleta apenas o valor da posição, mas a posição é mantida
+            delete nomes[1];
+            console.log(nomes);
+
+            //remover e retornar o último elemento de um array - pop
+            var nome = nomes.pop();
+            console.log("Elemento removido: "+ nome);
+            console.log(nomes);
+
+            //remover e retornar o primeiro elemento de um array - shift
+            nome = nomes.shift();
+            console.log("Elemento removido: "+ nome);
+            console.log(nomes);
+
+            //splice - vocÊ especifica o indice inicial e a quantidade de elementos a serem removidos incluindo o elemento do indice inicial
+            nomes.splice(1,1)
+            console.log(nomes);
+
+            console.log("------------")
+            console.log(typeof nomes); //retorna object
+
+            //percorrendo array com for
+            var professores;
+
+            for(var i=0;i<5;i++){
+                professores[i] = prompt("Nome do professor:")
+            }
+            console.log(professores);
+
+            for(var i=0;i<professores.length;i++){
+                console.log("Professor:"+ professores[i]);
+            }
+
+            //criando array de array
+
+            var multidimencional =[[1,2,3],[4,5,6],[7,8,9]];
+            console.log("---------Array de Array---------");
+            console.log(multidimencional);
+
+            //concatenando arrays - juntando em um só
+            var tecnico = ["LP", "BD","DAW"];
+            var medio = ["Matemática", "Português", "Biologia"];
+            var formacaoCompleta = tecnico.concat(medio);
+
+            console.log("-----Arrays concatenados-----");
+            console.log(formacaoCompleta);
+
+            //gerando String com elementos do array "tecnico"
+            var stringResultante = tecnico.join("/");
+            console.log("---- String resultante = "+ stringResultante);
+
+            //copiando um pedaço do array de x até y (y não é incluso)
+            var formacaoBasica = medio.slice(0,2);
+            console.log("---- Formação básica = "+ formacaoBasica);
+
+            //invertendo os elementos do array
+            tecnico.reverse();
+            console.log("---- Array invertido ----");
+            console.log(tecnico);
+            
+
+        </script>
+
+    </head>
+    <body>
+        Arrays
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Página de cadastro</title>
+		<link rel="icon" href="Multimídia/Imagem/favicon.ico">
+
+		<style type="text/css">
+			
+				.moldura{
+					height: auto;
+					border-radius: 10px;
+					margin-top: 7%;
+					margin-left: 5%;
+					border: outset 3px black;
+					background: linear-gradient(to top left, tomato, salmon, tomato);
+					width: 20%;
+				}
+				body{
+					background-color: crimson;
+					width: 98%;
+				height: 97%;
+				}
+
+				form{
+				padding: 5%;
+			}
+
+			input{
+				margin-bottom: 8%;
+				color: black;
+
+				background-color: rgb(190, 190, 190);
+
+				transition-duration: 0.15s;
+			}
+
+			input:focus{
+				background-color: whitesmoke;
+				color: gray;
+			}
+
+			input:hover{
+				background-color: gainsboro;
+				color: gray;
+
+				transition-duration: 0.15s;
+			}
+
+			input[type="submit"]{
+				background-color: gray;
+				color: black;
+
+				box-align: center;
+
+				padding: 5px;
+				margin-left: 30%;
+
+				border-radius: 8%;
+
+				transition-duration: 0.5s;
+			}
+
+			input[type="submit"]:hover{
+				transform: scale(1.1, 1.1);
+
+				transition-duration: 0.5s;
+			}
+
+				label {
+				color: black;
+				font-weight: bold;
+			}
+
+			#retorno{
+				margin-left: 5%;
+				color: white;
+			}
+			a:visited{
+				color: white;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		
+		<h1 align="center">Bem-Vindo a Página de Cadastro do Flamengo</h1>
+		<div class="moldura">
+			<form>
+				<label for="nome">Nome (completo)</label>
+				<input id="nome" name="nome" type="text" placeholder="Ex: Manoel Gomes" required minlength="8">
+				<br>
+		        
+				<label for="email">E-Mail</label>
+				<input id="email" type="email" required placeholder="Ex: flamengo@gmail.com">
+				<br>
+		        
+				<label for="senha">Senha</label>
+				<input id="senha" type="password" minlength="5" required placeholder="Ex: 321senha">
+				<br>
+		        
+				<label>Sexo</label>
+				<input name="sexo" id="f" type="checkbox" value="f"><label for="f">F</label>
+				<input name="sexo" id="m" type="checkbox" value="m"><label for="m">M</label>
+				<br>
+		        
+				<label for="aniversario">Data de Nascimento</label>
+				<input id="aniversario" type="date" required>
+				<br>
+		        
+				<label for="idade">Idade</label>
+				<input id="idade" type="number" max="100" required placeholder="Ex: 15">
+				<br>
+
+				<label for="estado">Estado</label>
+				<input type="text" id="estado" required placeholder="Ex: RJ" minlength="2">
+		        
+				<input type="submit" value="Cadastrar">
+			</form>
+		</div>
+
+		<a href="Index_flamengo.html" id="retorno">Voltar</a>
+	</body>

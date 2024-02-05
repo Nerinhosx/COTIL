@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nossa escola</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <!--Início navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../Imagens/Logo.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Index_BootstrapCotil.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nossaEscola.html">Nossa Escola</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="agri.html">Agrimensura</a></li>
+                                <li><a class="dropdown-item" href="Cursos/ds.html">Desenvolvimento de Sistemas</a></li>
+                                <li><a class="dropdown-item" href="ccd.html">Edificações</a></li>
+                                <li><a class="dropdown-item" href="enf.html">Enfermagem</a></li>
+                                <li><a class="dropdown-item" href="med.html">Mecânica</a></li>
+                                <li><a class="dropdown-item" href="prod.html">Prótese dentária</a></li>
+                                <li><a class="dropdown-item" href="qpd.html">Qualidade</a></li>
+
+                                <li><hr class="dropdown-divider" href=""></hr></li>
+
+                                <li><a class="dropdown-item" href="est.html">Estágios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Fim navbar-->
+
+        <!--Início do container-->
+        <div class="container cursosContainer">
+            <h6 class="display-6">
+                <i class="bi bi-buildings"></i>Nossa Escola
+            </h6>
+            <p class="lead">Conheça um pouco da nossa estrutura.</p>
+        </div>
+        <!--Fim do container-->
+
+        <!--Início do carrossel-->
+        <div class="container cursosContainer">
+            <div id="carouselNossaEscola" class="carousel slide carouselNossaEscola">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselNossaEscola" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselNossaEscola" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselNossaEscola" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselNossaEscola" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselNossaEscola" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagens/predio.jpg" class="d-block w-100" alt="Prédio">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Prédio Acadêmico</h5>
+                            <p>Entrada do nosso prédio com salas administativas e salas de aula.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/auditorio.jpg" class="d-block w-100" alt="Auditório">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Auditório</h5>
+                            <p>Auditório para eventos, palestras, reuniões etc.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/lab-ds.jpg" class="d-block w-100" alt="Laboratório de Informática">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laboratório de Informática</h5>
+                            <p>Contam com computadores com os softwares necessários para cada curso.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/lab-enf.jpg" class="d-block w-100" alt="Laboratório de Enfermagem">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laboratório de Enfermagem</h5>
+                            <p>Para práticas da área de saúde.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/lab-fq.jpg" class="d-block w-100" alt="Laboratório de Física e Química">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laboratório de Física e Química</h5>
+                            <p>Para práticas de Física e Química.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNossaEscola" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNossaEscola" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--Fim do carrossel-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

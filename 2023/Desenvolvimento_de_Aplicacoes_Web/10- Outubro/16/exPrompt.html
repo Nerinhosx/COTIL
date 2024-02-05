@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Prompt</title>
+
+        <style type="text/css">
+            
+            #cor{
+                color: red;
+            }
+
+        </style>
+
+        <script language="javascript">
+
+            var nome = prompt("Digite seu nome: ");
+            var v1 = prompt("Digite a 1ª nota: ");
+            var v2 = prompt("Digite a 2ª nota: ");
+
+            //parseInt()
+            var media = (parseFloat(v1) + parseFloat(v2)) / 2;
+
+            window.document.write("<h1 id='cor'>" + nome + "</h1>");
+            window.document.write("Média: " + media);
+            
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>

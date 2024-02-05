@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1678995396 source:c:\users\neroj\onedrive\Área de trabalho\ex4\main.c
+	<locale.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1660236059 source:c:\users\aluno\desktop\vetorex3_11-08\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

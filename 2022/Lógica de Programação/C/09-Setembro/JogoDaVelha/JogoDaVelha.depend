@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1663685432 source:c:\users\aluno\desktop\jogodavelha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1664713293 source:c:\users\neroj\onedrive\Área de trabalho\jogodavelha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

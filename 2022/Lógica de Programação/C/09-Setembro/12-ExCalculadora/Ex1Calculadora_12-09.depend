@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663003972 source:c:\users\aluno\desktop\ex1calculadora_12-09\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

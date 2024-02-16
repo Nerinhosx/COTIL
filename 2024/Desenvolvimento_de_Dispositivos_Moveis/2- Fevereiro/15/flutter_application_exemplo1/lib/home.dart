@@ -18,46 +18,61 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.amberAccent.shade400,
       ),
       backgroundColor: Colors.amberAccent.shade100,
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 150,
-              child: Image.network('https://upload.wikimedia.org/wikipedia/commons/7/70/Apis_mellifera_-_Brassica_napus_-_Valingu.jpg'),
-            ),
-            Text(
-              "Apis mellifera",
-              style: TextStyle(
-                fontStyle: FontStyle.italic
-              ),
-            ),
+      body:
+        SingleChildScrollView(child:
+          Center(child:
+            Column(
+              children: [
+                SizedBox(
+                  height: 150,
+                  child: Image.network('https://upload.wikimedia.org/wikipedia/commons/7/70/Apis_mellifera_-_Brassica_napus_-_Valingu.jpg'),
+                ),
+                Text(
+                  "Apis mellifera",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic
+                  ),
+                ),
 
-            SizedBox(
-              height: 150,
-              width: 200,
-              child: Image.network('https://upload.wikimedia.org/wikipedia/commons/0/0e/Abelha-jatai.jpg')
-            ),
-            Text(
-              "Tetragonisca angustula",
-              style: TextStyle(
-                fontStyle: FontStyle.italic,
-              ),
-            ),
+                SizedBox(
+                  height: 150,
+                  width: 200,
+                  child: Image.network('https://upload.wikimedia.org/wikipedia/commons/0/0e/Abelha-jatai.jpg')
+                ),
+                Text(
+                  "Tetragonisca angustula",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
 
-            SizedBox(
-              height: 150,
-              width: 200,
-              child: Image.network('https://lh4.googleusercontent.com/-cC4xAvG_o5I/TWr2NiDHNcI/AAAAAAAAAIU/-hg-YF13tG4/s1600/Nova+Imagem.png'),
+                SizedBox(
+                  height: 150,
+                  width: 200,
+                  child: Image.network('https://lh4.googleusercontent.com/-cC4xAvG_o5I/TWr2NiDHNcI/AAAAAAAAAIU/-hg-YF13tG4/s1600/Nova+Imagem.png'),
+                ),
+                Text(
+                  "Melipona quadrifasciata anthidioides",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("ACF"),
+                    SizedBox(width: 30,),
+
+                    Text("ASF"),
+                    SizedBox(width: 30,),
+                  ]
+                ),
+              ]
             ),
-            Text(
-              "Melipona quadrifasciata anthidioides",
-              style: TextStyle(
-                fontStyle: FontStyle.italic,
-              ),
-            ),
-          ]
+          ),
         ),
-      ),
+      
       bottomNavigationBar: BottomAppBar(
         color: Colors.amber,
         height: 80,
@@ -65,7 +80,7 @@ class Home extends StatelessWidget {
           "Essa é a página principal do app",
           style: TextStyle(
             color: Colors.black87,
-            fontSize: 30,
+            fontSize: 25,
           ),
           textAlign: TextAlign.center,
         ),

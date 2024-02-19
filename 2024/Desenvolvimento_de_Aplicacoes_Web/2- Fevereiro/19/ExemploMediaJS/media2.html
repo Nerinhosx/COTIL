@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cálculo de Média</title>
+
+	<style type="text/css">
+		#painel {
+			width: 95vw;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;			
+		}
+
+		.resultado {
+			width: 30%;
+			padding: 15px;	
+			text-align: center;		 
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>Cálculo de Média</h1>
+	<hr>
+    
+	<div id="painel">
+		<div id="formNotas">
+			<form>
+				<label>Nota 1:</label>
+				<input type="text" id="nota1">
+
+				<br><br>
+
+				<label>Nota 2:</label>
+				<input type="text" id="nota2">						
+				<input type="button" value="Calcular" id="Calcular">
+			</form>
+		</div>	
+
+		<div class="resultado">
+			<span id="media"></span>
+			<br>
+			<span id="situacao"></span>
+		</div>
+    </div>
+
+    <hr>
+    <span id="erro"></span>   
+
+    <script type="text/javascript" src="media2.js"></script>       
+</body>
+</html>

@@ -20,14 +20,14 @@ function calcularMedia() {
 
         var media = (parseFloat(n1) + parseFloat(n2)) / 2;
 
-        document.querySelector("#media").innerHTML = "<b>Média:" + media.toFixed(1) + "</b>";
+        document.querySelector("#media").innerHTML = `<b>A sua média é: ${media.toFixed(1)} </b>`;
 
         document.querySelector("#situacao").style.color = "white";
         if (media >= 6.0) {
-            document.querySelector("#situacao").textContent = "Situação:  APROVADO";
+            document.querySelector("#situacao").textContent = "Portanto sua situação é: APROVADO";
             document.querySelector("#situacao").style.backgroundColor = "green";
         } else {
-            document.querySelector("#situacao").textContent = "Situação: REPROVADO";
+            document.querySelector("#situacao").textContent = "Portanto sua situação é: REPROVADO";
             document.querySelector("#situacao").style.backgroundColor = "red";
         }
 

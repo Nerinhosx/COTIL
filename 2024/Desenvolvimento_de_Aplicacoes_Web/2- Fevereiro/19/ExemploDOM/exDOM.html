@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector - Alterar Atributos</title>
+
+    <script type="text/javascript">
+        function exibirSenha() {
+            if (document.querySelector("#pwd").getAttribute("type") == "password"){
+
+                document.querySelector("#pwd").setAttribute("type", "text");
+                document.querySelector("#exibicao").textContent = "Esconder Senha";
+            }
+            else if (document.querySelector("#pwd").getAttribute("type") == "text"){
+
+                document.querySelector("#pwd").setAttribute("type", "password");
+                document.querySelector("#exibicao").textContent = "Exibir Senha";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    Login: <br>
+    <input type="text" size="30">
+
+    <br><br>
+    Password:<br>
+    <input type="password" id="pwd">
+
+    <small id="exibicao" onclick="exibirSenha();">Exibir Senha</small>
+
+    <br><br>
+    <button>Ok</button>
+</body>
+</html>

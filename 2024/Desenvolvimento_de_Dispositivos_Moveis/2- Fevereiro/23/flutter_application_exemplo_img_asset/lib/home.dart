@@ -3,7 +3,21 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  
+  final figBird = SizedBox(child:
+            Image.asset('assets/images/bird.jpg'),
+            height: 180);
+  
+  final txtBird = Text(
+            "martim-pescador",
+            style: TextStyle(
+              fontFamily: 'Fredoka',
+              fontSize: 20,
+              fontWeight: FontWeight.bold
+            ),
+          );
+
+  Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,20 +37,11 @@ class Home extends StatelessWidget {
       body: Center(child:
         Column(children: [
           SizedBox(height: 30),
-          SizedBox(child:
-            Image.asset('assets/images/bird.jpg'),
-            height: 180,
-          ),
-          Text(
-            "martim-pescador",
-            style: TextStyle(
-              fontFamily: 'Fredoka',
-              fontSize: 20,
-              fontWeight: FontWeight.bold
-            ),
-          ),    
+          figBird,
+          txtBird,
         ],),
       ),
+      backgroundColor: Colors.orangeAccent[100],
     );
   }
 }

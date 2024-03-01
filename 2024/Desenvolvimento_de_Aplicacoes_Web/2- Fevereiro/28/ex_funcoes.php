@@ -35,6 +35,6 @@
     </head>
 
     <body>
-        <?= $msg ?>
+        <?= $msg ?> <!-- Esse jeito de "abrir" o php serve apenas para mostrar variável -->
     </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Cadastros de Curso</h1>
+
+    <form>
+        Sigla:<br>
+        <input type="text" id="sigla">
+
+        <br><br>
+        Nome do Curso:<br>
+        <input type="text" id="nome">
+
+        <br><br>
+        <input type="button" value="Cadastrar" onclick="cadastrarCurso();">
+    </form>
+
+    <hr>
+    <h2>Cursos Cadastrados</h2>
+
+    <table border="1" id="tabelaCursos" width="30%">
+        <tr>
+            <th>Sigla</th>
+            <th>Nome</th>
+        </tr>
+    </table>
+</body>
+</html>

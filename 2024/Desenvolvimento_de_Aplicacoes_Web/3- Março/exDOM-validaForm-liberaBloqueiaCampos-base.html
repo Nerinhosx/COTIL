@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+
+    <script>
+        
+        function verificaTipo(tipo){
+            if (tipo=="PF"){
+                //display altera a visibilidade e posição do elemento, como se o elemento não existisse
+                //visible altera apenas a visibilidade do elemento, mantendo sua posição
+                document.getElementById("cpf").style.display="inline";
+                document.getElementById("cnpj").style.display="none";
+            } else if(tipo=="PJ"){
+                //poderia utilizar document.getElementById("tx_cpf").disable = false;  para desabilitar, ao invés de remover o campo
+                document.getElementById("cpf").style.display="none";
+                document.getElementById("cnpj").style.display="inline";
+            }
+        }
+
+        function enviarDados(){
+            if((document.dados.tipo.value == 'PF') && (document.dados.tx_nome.value == '')){
+                formataMesg("Preencha campo NOME corretamente!");
+                document.dados.tx_nome.focus();
+                return false;
+            }
+
+            if(document.dados.tipo.value == 'PF' && document.dados.tx_nome.value.length < 8){
+                formataMesg('É necessário preencher o campo NOME com 8 ou mais caracteres!');
+                document.dados.tx_mensagem.focus();
+                return false;
+            }
+
+            if((document.dados.tipo.value == 'PJ') && (document.dados.tx_rz.value == '')){
+                formataMesg("Preencha campo RAZÃO SOCIAL corretamente!");
+                document.dados.tx_rz.focus();
+                return false;
+            }
+
+            if(document.dados.tipo.value == 'PJ' && document.dados.tx_rz.value.length < 8){
+                formataMesg('É necessário preencher o campo RAZÃO SOCIAL com 8 ou mais caracteres!');
+                document.dados.tx_rz.focus();
+                return false;
+            }
+
+            if(document.dados.tx_email.value == "" || document.dados.tx_email.value.indexOf('@') == -1 || document.dados.tx_email.value.indexOf('.') == -1){
+                formataMesg('Preencha o campo E-MAIL corretamente!');
+                document.dados.tx_email.focus();
+                return false;
+            }
+
+            if(document.dados.tx_mensagem.value == ""){
+                formataMesg('Preencha o campo MENSAGEM!');
+                document.dados.tx_mensagem.focus();
+                return false;
+            }
+
+            if(document.dados.tx_mensagem.value.length < 50){
+                formataMesg('É necessário preencher o campo MENSAGEM com 50 ou mais caracteres!');
+                document.dados.tx_mensagem.focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        function formataMesg(mesg){
+            let msg = document.getElementById('msg');
+            msg.textContent = mesg;
+            msg.style.color = 'red';
+        }
+
+        function limparMesg(){
+            document.getElementById('msg').textContent = '';
+        }
+    </script>
+</head>
+<body onload="verificaTipo('PF')">
+    <h1>Faça seu Cadastro</h1>
+
+    <div id="msg"></div>
+
+    <br>
+
+    <form method="post" name="dados" id="dados" onsubmit="return enviarDados();">
+        Pessoa Física
+        <input type="radio" name="tipo" id="PF" value="PF" checked onclick="verificaTipo(this.value)">
+        
+        Pessoa Jurídica
+        <input type="radio" name="tipo" id="PJ" value="PJ" onclick="verificaTipo(this.value)">
+
+        <br>
+
+        <div id="cpf">
+            <br>
+            CPF:<br>
+            <input type="text" name="tx_cpf" id="tx_cpf" size="20" maxlength="14">
+            <br><br>
+            Nome Completo:<br>
+            <input type="text" name="tx_nome" id="tx_nome" size="52" maxlength="50" onkeypress="limparMesg()">
+        </div>
+
+        <div id="cnpj">
+            <br>
+            CNPJ:<br>
+            <input type="text" name="tx_cnpj" id="tx_cnpj" size="20" maxlength="18">
+            <br><br>
+            Razão Social:<br>
+            <input type="text" name="tx_rz" id="tx_rz" size="52" maxlength="50" onkeypress="limparMesg()">
+        </div>
+
+        <br><br>
+
+        E-mail:<br>
+        <input type="text" name="tx_email" id="tx_email" size="52" maxlength="50" onkeypress="limparMesg()">
+
+        <br><br>
+
+        Mensagem:<br>
+        <textarea name="tx_mensagem" cols="53" rows="8" id="tx_mensagem" onkeypress="limparMesg()"></textarea>
+
+        <br><br>
+
+        <input name="Submit" type="submit" value="Enviar Dados">
+
+        <input name="Reset" type="reset" value="Redefinir">   
+    </form>
+</body>
+</html>

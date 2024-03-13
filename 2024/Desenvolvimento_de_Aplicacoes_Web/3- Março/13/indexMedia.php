@@ -1,3 +1,30 @@
+<?php
+    if($_SERVER["REQUEST_METHOD"] === 'GET'){
+        $media = "";
+        $situacao = "";
+    }
+    else if($_SERVER["REQUEST_METHOD"] === "POST"){
+        if((trim($_REQUEST["nota1"])) != "" && (trim($_REQUEST["nota2"]) != ""))
+        {
+            $nota1 = $_REQUEST["nota1"];
+            $nota2 = $_REQUEST["nota2"];
+
+            $media = ($nota1 + $nota2)/2;
+
+            if ($media >= 6){
+                $situacao = "<span class='ap'>Aprovado!</span>";
+            }else if(($media < 6) && ($media > 3)){
+                $situacao = "<span class='dp'>Dependência!</span>";
+            } else{
+                $situacao = "<span class='rep'>Reprovado!</span>";
+            }
+        }
+        else{
+            echo "<span>Informe as duas notas!</span>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,29 +66,9 @@
         <input type="submit" value="Calcular">
     </form>
 
-    <?$situacao?>
-
-    <?php
-        //$op = $_REQUEST["op"];
-
-        if((trim($_REQUEST["nota1"])) != "" && (trim($_REQUEST["nota2"]) != ""))
-        {
-            $nota1 = $_REQUEST["nota1"];
-            $nota2 = $_REQUEST["nota2"];
-
-            $media = ($nota1 + $nota2)/2;
-
-            if ($media >= 6){
-                $situacao = "<span class='ap'>Aprovado!</span>";
-            }else if(($media < 6) && ($media > 3)){
-                $situacao = "<span class='dp'>Dependência!</span>";
-            } else{
-                $situacao = "<span class='rep'>Reprovado!</span>";
-            }
-        }
-        else{
-            echo "<span>Informe as duas notas!</span>";
-        }
-?>
+    <hr>
+    Média: <?= $media?>
+    <br>
+    <?= $situacao?>
 </body>
 </html>

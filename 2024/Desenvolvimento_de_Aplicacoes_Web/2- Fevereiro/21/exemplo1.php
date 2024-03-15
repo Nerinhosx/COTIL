@@ -6,7 +6,7 @@
 
     echo "Hello World!<br>";
     echo "Meu primeiro código em <b>PHP</b><br>";
-    echo "Jedson🤓<br><br><hr>";
+    echo "Nero😎<br><br><hr>";
 
     //variaveis
 
@@ -14,7 +14,7 @@
     echo $nome;
     echo "<br><br>";
 
-    var_dump($nome); //exive o tipo de dado, tamanho usado e valor
+    var_dump($nome); //exibe o tipo de dado, tamanho usado e valor
     echo "<br><br>";
 
     $outroNome = "UNICAMP";

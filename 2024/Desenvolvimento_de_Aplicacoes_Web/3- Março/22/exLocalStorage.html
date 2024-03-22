@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+
+    <script type="text/javascript">
+
+        function identificaAluno(){
+            var obj = localStorage.getItem("ra");
+
+            if(obj!= null){
+                document.getElementById("aluno").innerText = obj;
+            }
+            else{
+                document.getElementById("aluno").innerText = "";
+            }
+        }
+
+        function gravar(){
+            localStorage.ra = document.getElementById("ra").value;
+            //localStorage.setItem("ra", document.getElementById("ra").value;
+
+            alert("RA gravado");
+            document.getElementById("ra").value ="";
+        }
+
+        function ler(){
+            //var obj = localStorage.ra;
+
+            var obj = localStorage.getItem("ra");
+
+            if(obj != null){
+                alert(obj)
+            } else{
+                alert("A chave procurada não existe no localStorage")
+            }
+        }
+
+        function remove(){
+
+        }
+    </script>
+</head>
+<body onload="identificaAluno();">
+    <h1>LocalStorage example</h1>
+
+    Olá <span id="aluno"></span>!
+    <br><br>
+
+    <form>
+        <label>RA:</label>
+        <input type="text" id="ra">
+        <button type="button" onclick="gravar();">Gravar</button>
+        
+        <hr>
+
+        <button type="button" onclick="ler();">Ler RA</button>
+        <button type="button" onclick="remover();">Remover RA</button>
+        <hr>
+    </form>
+</body>
+</html>

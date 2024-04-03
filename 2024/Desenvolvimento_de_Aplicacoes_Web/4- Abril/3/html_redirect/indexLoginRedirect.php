@@ -6,12 +6,14 @@
 
         if((trim($login) != "") && (trim($password) != "")){
             if(($login == "professor") && ($password == '1234')){
-                //header("Location: professorRedirect.html");
-                header("Location: professorRedirect.php?login=". $login);
+                session_start(); //Inicia a sessão
+                $_SESSION["login"] = $login; //Adiciona a variável "login" no espaço "login" da sessão
+                header("Location: professorRedirect.php");
             }
             else if(($login == "aluno") && ($password == '5678')){
-                //header("Location: alunoRedirect.html");
-                header("Location: alunoRedirect.php?login=". $login);
+                session_start(); //Inicia a sessão
+                $_SESSION["login"] = $login; //Adiciona a variável "login" no espaço "login" da sessão
+                header("Location: alunoRedirect.php");
             }
             else{
                 //header("Location: erroRedirect.html");

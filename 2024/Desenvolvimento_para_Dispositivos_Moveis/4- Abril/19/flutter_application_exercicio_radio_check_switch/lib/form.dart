@@ -151,6 +151,11 @@ class _MyFormState extends State<MyForm> {
               //Texto
 
               //Início Checkboxes
+                CheckboxListTile(
+                  title: Text("Sem classificação"),
+                  value: value, 
+                  onChanged: onChanged
+                ),
               //Fim Checkboxes
             ],
           ),

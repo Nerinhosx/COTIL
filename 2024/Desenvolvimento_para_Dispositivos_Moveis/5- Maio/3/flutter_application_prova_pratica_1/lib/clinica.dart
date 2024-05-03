@@ -204,9 +204,6 @@ class _MyClinicaState extends State<MyClinica> {
     if(res){
       formL.add("Residente");
     }
-    else{
-      formL.add("");
-    }
 
     if(esp){
       formL.add("Especializado");
@@ -245,7 +242,7 @@ class _MyClinicaState extends State<MyClinica> {
     medL.forEach((Med m) {
       print("Nome: ${m.name}");
       print("CRM: ${m.crm.toString()}");
-      print("Formação: ${m.formacao}");
+      print("Formação: ${m.formacao.toString()}");
       print(m.emCall);
       print("==============================================================");
     });

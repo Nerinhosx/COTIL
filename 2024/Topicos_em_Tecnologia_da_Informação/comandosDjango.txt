@@ -1,0 +1,31 @@
+cria pasta e entre 😳
+py -m venv venv --> cria a pasta de virtualização
+venv\Scripts\activate --> virtualização
+pip install django --> autoexplicativo
+py -m django startprojetc "nome" . --> cria um projeto (pasta) com o "nome". Usa-se o " ." para criar uma pasta única (sem ele, cria-se 2 pastas)
+py manage.py runserver --> inicia a exewcução do projeto
+py -m django startapp "nome" --> cria uma pasta com as aplicações
+py manage.py migrate --> não entendemos
+py manage.py createsuperuser --> cria um admin
+
+na views do home{
+    from django.http import HttpResponse
+
+    return (na função home) HttpResponse("texto")
+
+    OU
+
+    from django.shortcuts import render
+
+    return (na função home) render(request, "nome do arquivo")
+}
+
+na urls do projeto{
+    path('"caminho"', "item a ser exibido")
+}
+
+na settings do projeto{
+    INSTALLED_APPS = [
+        "'nome do app'",
+    ]
+}

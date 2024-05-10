@@ -221,9 +221,6 @@ class _MyClinicaState extends State<MyClinica> {
     }
 
     Med m = new Med(name, crm, formL, eC);
-    for(String f in formL){
-      print(f);
-    }
     medL.add(m);
   }
 
@@ -234,17 +231,17 @@ class _MyClinicaState extends State<MyClinica> {
     esp = false;
     pos = false;
     emerCall = false;
-    formL.clear();
+    formL = [];
   }
 
   void show(){
     print("\n");
-    medL.forEach((Med m) {
+    for (Med m in medL) {
       print("Nome: ${m.name}");
       print("CRM: ${m.crm.toString()}");
       print("Formação: ${m.formacao.toString()}");
       print(m.emCall);
       print("==============================================================");
-    });
+    }
   }
 }

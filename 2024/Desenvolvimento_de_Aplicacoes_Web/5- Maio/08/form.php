@@ -1,5 +1,6 @@
 <!--localhost/COTIL/2024/Desenvolvimento_de_Aplicacoes_Web/5- Maio/08/form.php-->
 <?php
+    session_start();
     $msg = "";
     $loginDef = "Nerson";
     $passwDef = crypt("12345678", "nerson");
@@ -7,18 +8,17 @@
         $login = $_POST["login"];
         $passw = $_POST["passw"];
 
-        if(!isset($login) || !isset($passw)){
-            $msg = "Login e senha são obrigatórios!";
-        }
-        else if(strlen($login)<5){
+        if(strlen($login)<5){
             $msg = "O login precisa ter 5 ou mais caracteres.";   
         }
         else if(strlen($passw)<8){
             $msg = "A senha precisa ter 8 ou mais caracteres.";
         }
         else if($login==$loginDef && crypt($passw, "nerson")==$passwDef){
+            $_SESSION["login"] = $login;
+            $_SESSION["password"] = $passw;
             $msg = "";
-            header("Location: http://www.cotil.unicamp.br");
+            header("Location: outrapagina.php");
         }
         else{
             $msg = "Login falho: usuário não encontrado.";
@@ -62,12 +62,12 @@
     <section>
         <form method="POST">
             <label for="login">Login:</label><br>
-            <input type="text" name="login">
+            <input type="text" name="login" required>
 
             <br><br>
 
             <label for="passw">Senha:</label><br>
-            <input type="password" name="passw">
+            <input type="password" name="passw" required>
 
             <br><br>
 

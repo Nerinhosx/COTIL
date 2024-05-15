@@ -2,7 +2,7 @@
 <?php
     $msg = "";
     $loginDef = "Nerson";
-    $passwDef = crypt("1234", "nerson");
+    $passwDef = crypt("12345678", "nerson");
     if($_SERVER["REQUEST_METHOD"] === "POST"){
         $login = $_POST["login"];
         $passw = $_POST["passw"];
@@ -17,7 +17,11 @@
             $msg = "A senha precisa ter 8 ou mais caracteres.";
         }
         else if($login==$loginDef && crypt($passw, "nerson")==$passwDef){
-            header("Location");
+            $msg = "";
+            header("Location: http://www.cotil.unicamp.br");
+        }
+        else{
+            $msg = "Login falho: usuário não encontrado.";
         }
     }
 ?>
@@ -36,6 +40,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         form{
@@ -55,7 +60,7 @@
     </header>
 
     <section>
-        <form method="post">
+        <form method="POST">
             <label for="login">Login:</label><br>
             <input type="text" name="login">
 
@@ -66,9 +71,10 @@
 
             <br><br>
 
-            <input type="button" id="btn" value="Logar">
+            <input type="submit" id="btn" value="Logar">
         </form>
 
+        <br><br>
         <?=$msg?>
     </section>
 </body>

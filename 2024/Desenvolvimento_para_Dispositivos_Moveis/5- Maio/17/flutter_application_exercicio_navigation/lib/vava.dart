@@ -32,6 +32,17 @@ class _MyVavaState extends State<MyVava> {
         child: Column(
           children: [
             Image.asset("images/vavaLogo.png"),
+            Padding(padding: EdgeInsets.only(bottom: 30), child: 
+            Row(
+              children: [
+                Image.asset("images/controller.png", width: 100),
+                Image.asset("images/duelist.png", width: 100),
+                Image.asset("images/initiator.png", width: 100),
+                Image.asset("images/sentinel.png", width: 100),
+              ],
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            ),
+            ),
           ],
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
         ),

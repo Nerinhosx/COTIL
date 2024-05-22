@@ -8,7 +8,10 @@
         $login = $_POST["login"];
         $passw = $_POST["passw"];
 
-        if(strlen($login)<5){
+        if((strlen(trim($login))==0) || (strlen(trim($passw))==0)){
+            $msg = "Login e/ou senha não informado(s).";
+        }
+        else if(strlen($login)<5){
             $msg = "O login precisa ter 5 ou mais caracteres.";   
         }
         else if(strlen($passw)<8){
@@ -19,9 +22,6 @@
             $_SESSION["password"] = $passw;
             $msg = "";
             header("Location: outrapagina.php");
-        }
-        else{
-            $msg = "Login falho: usuário não encontrado.";
         }
     }
 ?>
@@ -62,12 +62,12 @@
     <section>
         <form method="POST">
             <label for="login">Login:</label><br>
-            <input type="text" name="login" required>
+            <input type="text" name="login">
 
             <br><br>
 
             <label for="passw">Senha:</label><br>
-            <input type="password" name="passw" required>
+            <input type="password" name="passw">
 
             <br><br>
 

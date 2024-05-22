@@ -32,16 +32,45 @@ class _MyVavaState extends State<MyVava> {
         child: Column(
           children: [
             Image.asset("images/vavaLogo.png"),
-            Padding(padding: EdgeInsets.only(bottom: 30), child: 
-            Row(
-              children: [
-                Image.asset("images/controller.png", width: 100),
-                Image.asset("images/duelist.png", width: 100),
-                Image.asset("images/initiator.png", width: 100),
-                Image.asset("images/sentinel.png", width: 100),
-              ],
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height*0.04),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset("images/controller.png", width: 100),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                          Row(
+                            children: [
+                              Text("Controller", style: TextStyle(color: Colors.cyan[50]),),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                        ],
+                        mainAxisAlignment: MainAxisAlignment.center,
+                      ),
+                      Image.asset("images/duelist.png", width: 100),
+                      Image.asset("images/initiator.png", width: 100),
+                      Image.asset("images/sentinel.png", width: 100),
+                    ],
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  ),
+                  Row(
+                    children: [
+                      Text("Duelist"),
+                      Text("Initiator"),
+                      Text("Sentinel"),
+                    ],
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  ),
+                ],
+              ),
             ),
           ],
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

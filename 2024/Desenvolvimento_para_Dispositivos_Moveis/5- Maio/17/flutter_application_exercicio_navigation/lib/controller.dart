@@ -51,7 +51,7 @@ class _MyControllerState extends State<MyController> {
                               ),
                             ),
                           ),
-                          width: MediaQuery.of(context).size.width*0.4,
+                          width: MediaQuery.of(context).size.width*0.6,
                         ),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.5),
@@ -60,7 +60,7 @@ class _MyControllerState extends State<MyController> {
                         ),
                       ),
                     ],
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                   ),
                 ),
 
@@ -83,7 +83,7 @@ class _MyControllerState extends State<MyController> {
                               ),
                             ),
                           ),
-                          width: MediaQuery.of(context).size.width*0.4,
+                          width: MediaQuery.of(context).size.width*0.6,
                         ),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.5),
@@ -92,7 +92,7 @@ class _MyControllerState extends State<MyController> {
                         ),
                       ),
                     ],
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                   ),
                 ),
 
@@ -113,7 +113,7 @@ class _MyControllerState extends State<MyController> {
                                   style: TextStyle(
                                     fontFamily: "Kameron",
                                     fontWeight: FontWeight.w600,
-                                    fontSize: 13,
+                                    fontSize: 15,
                                   ),
                                 ),
                                 Row(
@@ -124,7 +124,7 @@ class _MyControllerState extends State<MyController> {
                               ],
                             )
                           ),
-                          width: MediaQuery.of(context).size.width*0.4,
+                          width: MediaQuery.of(context).size.width*0.6,
                         ),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.5),
@@ -133,7 +133,7 @@ class _MyControllerState extends State<MyController> {
                         ),
                       ),
                     ],
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                   ),
                 ),
               ],

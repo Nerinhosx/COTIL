@@ -45,9 +45,9 @@ class _MyControllerState extends State<MyController> {
                               widget.lista[0].desc,
                               softWrap: true,
                               style: TextStyle(
-                                fontFamily: "Montserrat",
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontFamily: "Kameron",
+                                fontWeight: FontWeight.w600,
+                                fontSize: 15,
                               ),
                             ),
                           ),
@@ -68,17 +68,18 @@ class _MyControllerState extends State<MyController> {
                   padding: EdgeInsets.all(20),
                   child: Row(
                     children: [
-                      Image.asset("images/cont/Viper.png", height: MediaQuery.of(context).size.height*0.35),
+                      Image.asset(widget.lista[1].img, height: MediaQuery.of(context).size.height*0.35),
                       DecoratedBox(
                         child: SizedBox(
                           child: Padding(
                             padding: EdgeInsets.all(10),
                             child: Text(
-                              "Viper, a química dos Estados Unidos, emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha e prejudicar a visão do inimigo. Se as toxinas não matarem a presa, seus jogos mentais certamente o farão.",
+                              widget.lista[1].desc,
                               softWrap: true,
                               style: TextStyle(
-                                fontFamily: "Montserrat",
-                                fontSize: 16,
+                                fontFamily: "Kameron",
+                                fontWeight: FontWeight.w600,
+                                fontSize: 15,
                               ),
                             ),
                           ),
@@ -99,19 +100,29 @@ class _MyControllerState extends State<MyController> {
                   padding: EdgeInsets.all(20),
                   child: Row(
                     children: [
-                      Image.asset("images/cont/Omen.png", height: MediaQuery.of(context).size.height*0.35),
+                      Image.asset(widget.lista[2].img, height: MediaQuery.of(context).size.height*0.35),
                       DecoratedBox(
                         child: SizedBox(
                           child: Padding(
                             padding: EdgeInsets.all(10),
-                            child: Text(
-                              "Omen, uma lembrança fantasmagórica, caça nas sombras. Ele cega os inimigos, teleporta-se pelo campo e deixa a paranoia assumir o controle enquanto o adversário tenta descobrir de onde virá seu próximo ataque.",
-                              softWrap: true,
-                              style: TextStyle(
-                                fontFamily: "Montserrat",
-                                fontSize: 16,
-                              ),
-                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  widget.lista[2].desc,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    //TO DO: adicionar foto das habilidades do personagem
+                                  ],
+                                ),
+                              ],
+                            )
                           ),
                           width: MediaQuery.of(context).size.width*0.4,
                         ),

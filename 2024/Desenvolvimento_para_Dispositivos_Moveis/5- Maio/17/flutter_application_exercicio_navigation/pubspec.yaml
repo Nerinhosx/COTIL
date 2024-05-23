@@ -96,8 +96,8 @@ flutter:
       fonts:
         - asset: assets/fonts/valorantFont.ttf
 
-    - family: Montserrat
+    - family: Kameron
       fonts:
-        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/Kameron-VariableFont_wght.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

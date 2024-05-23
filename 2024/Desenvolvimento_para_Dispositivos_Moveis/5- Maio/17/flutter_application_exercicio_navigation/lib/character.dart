@@ -1,6 +1,7 @@
 class Character{
   String img = "";
   String desc = "";
+  List<String> liHab = [];
 
   String get getImg => this.img;
 
@@ -10,7 +11,11 @@ class Character{
 
   set setDescr(String desc) => this.desc = desc;
 
-  Character(String img, String desc){
+  List<String> get getLiHab => this.liHab;
+
+  set setLiHab(List<String> liHab) => this.liHab = liHab;
+
+  Character(String img, String desc /*List<String> liHab*/){
     this.img = img;
     this.desc = desc;
   }

@@ -88,9 +88,9 @@ class _MyVavaState extends State<MyVava> {
                             ],
                           ),
                           onTap: () {
-                            liCont.add(brimstone);
-                            liCont.add(viper);
                             liCont.add(omen);
+                            liCont.add(omen);
+                            liCont.add(brimstone);
                             Navigator.push(context, MaterialPageRoute(builder: (context) => MyController(liCont)));
                           },
                         ),

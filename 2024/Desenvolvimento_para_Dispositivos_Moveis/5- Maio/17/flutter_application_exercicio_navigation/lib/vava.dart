@@ -31,18 +31,18 @@ class _MyVavaState extends State<MyVava> {
         ),
         child: Column(
           children: [
-            Image.asset("images/vavaLogo.png"),
-            Padding(
-              padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height*0.04),
-              child: Column(
-                children: [
-                  Row(
+            Image.asset("images/vavaLogo.png", width: MediaQuery.of(context).size.height*0.8),
+            Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height*0.03),
+                  child: Row(
                     children: [
                       Column(
                         children: [
                           Row(
                             children: [
-                              Image.asset("images/controller.png", width: 100),
+                              Image.asset("images/controller.png", width: MediaQuery.of(context).size.height*0.1),
                             ],
                             mainAxisAlignment: MainAxisAlignment.center,
                           ),
@@ -53,24 +53,64 @@ class _MyVavaState extends State<MyVava> {
                             mainAxisAlignment: MainAxisAlignment.center,
                           ),
                         ],
-                        mainAxisAlignment: MainAxisAlignment.center,
                       ),
-                      Image.asset("images/duelist.png", width: 100),
-                      Image.asset("images/initiator.png", width: 100),
-                      Image.asset("images/sentinel.png", width: 100),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset("images/duelist.png", width: MediaQuery.of(context).size.height*0.1),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                          Row(
+                            children: [
+                              Text("Duelist", style: TextStyle(color: Colors.cyan[50]),),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                        ],
+                        mainAxisAlignment: MainAxisAlignment.end,
+                      ),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset("images/initiator.png", width: MediaQuery.of(context).size.height*0.1),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                          Row(
+                            children: [
+                              Text("Initiator", style: TextStyle(color: Colors.cyan[50]),),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                        ],
+                        mainAxisAlignment: MainAxisAlignment.end,
+                      ),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset("images/sentinel.png", width: MediaQuery.of(context).size.height*0.1),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                          Row(
+                            children: [
+                              Text("Sentinel", style: TextStyle(color: Colors.cyan[50]),),
+                            ],
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          ),
+                        ],
+                        mainAxisAlignment: MainAxisAlignment.end,
+                      ),
                     ],
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                   ),
-                  Row(
-                    children: [
-                      Text("Duelist"),
-                      Text("Initiator"),
-                      Text("Sentinel"),
-                    ],
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  ),
-                ],
-              ),
+                ),
+              ],
+              mainAxisAlignment: MainAxisAlignment.center,
             ),
           ],
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

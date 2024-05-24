@@ -41,20 +41,45 @@ class _MyControllerState extends State<MyController> {
                         child: SizedBox(
                           child: Padding(
                             padding: EdgeInsets.all(10),
-                            child: Text(
-                              widget.lista[0].desc,
-                              softWrap: true,
-                              style: TextStyle(
-                                fontFamily: "Kameron",
-                                fontWeight: FontWeight.w600,
-                                fontSize: 15,
-                              ),
-                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  widget.lista[0].name,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 17,
+                                  ),
+                                ),
+                                Text(
+                                  widget.lista[0].desc,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Row(
+                                    children: [
+                                      Image.asset(widget.lista[0].liHab[0], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[0].liHab[1], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[0].liHab[2], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[0].liHab[3], height: MediaQuery.of(context).size.height*0.05,),
+                                    ],
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  ),
+                                ),
+                              ],
+                            )
                           ),
-                          width: MediaQuery.of(context).size.width*0.6,
+                          width: MediaQuery.of(context).size.width*0.45,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.blueGrey[200]!.withOpacity(0.7),
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -73,20 +98,45 @@ class _MyControllerState extends State<MyController> {
                         child: SizedBox(
                           child: Padding(
                             padding: EdgeInsets.all(10),
-                            child: Text(
-                              widget.lista[1].desc,
-                              softWrap: true,
-                              style: TextStyle(
-                                fontFamily: "Kameron",
-                                fontWeight: FontWeight.w600,
-                                fontSize: 15,
-                              ),
-                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  widget.lista[1].name,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 17,
+                                  ),
+                                ),
+                                Text(
+                                  widget.lista[1].desc,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Row(
+                                    children: [
+                                      Image.asset(widget.lista[1].liHab[0], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[1].liHab[1], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[1].liHab[2], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[1].liHab[3], height: MediaQuery.of(context).size.height*0.05,),
+                                    ],
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  ),
+                                ),
+                              ],
+                            )
                           ),
-                          width: MediaQuery.of(context).size.width*0.6,
+                          width: MediaQuery.of(context).size.width*0.45,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.blueGrey[200]!.withOpacity(0.7),
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -108,6 +158,15 @@ class _MyControllerState extends State<MyController> {
                             child: Column(
                               children: [
                                 Text(
+                                  widget.lista[2].name,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontFamily: "Kameron",
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 17,
+                                  ),
+                                ),
+                                Text(
                                   widget.lista[2].desc,
                                   softWrap: true,
                                   style: TextStyle(
@@ -116,18 +175,25 @@ class _MyControllerState extends State<MyController> {
                                     fontSize: 15,
                                   ),
                                 ),
-                                Row(
-                                  children: [
-                                    //TO DO: adicionar foto das habilidades do personagem
-                                  ],
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10),
+                                  child: Row(
+                                    children: [
+                                      Image.asset(widget.lista[2].liHab[0], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[2].liHab[1], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[2].liHab[2], height: MediaQuery.of(context).size.height*0.05,),
+                                      Image.asset(widget.lista[2].liHab[3], height: MediaQuery.of(context).size.height*0.05,),
+                                    ],
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  ),
                                 ),
                               ],
                             )
                           ),
-                          width: MediaQuery.of(context).size.width*0.6,
+                          width: MediaQuery.of(context).size.width*0.45,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.5),
+                          color: Colors.blueGrey[200]!.withOpacity(0.7),
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.circular(10),
                         ),

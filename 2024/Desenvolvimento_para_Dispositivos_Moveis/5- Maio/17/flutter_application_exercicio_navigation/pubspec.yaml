@@ -79,6 +79,57 @@ flutter:
     - assets/images/sent/Killjoy.png
     - assets/images/sent/Cypher.png
     - assets/images/sent/Chamber.png
+    - assets/images/init/KAYO.png
+    - assets/images/init/Skye.png
+    - assets/images/init/Sova.png
+    - assets/images/cont/brimstone/Brimstone_hab1.png
+    - assets/images/cont/brimstone/Brimstone_hab2.png
+    - assets/images/cont/brimstone/Brimstone_hab3.png
+    - assets/images/cont/brimstone/Brimstone_hab4.png
+    - assets/images/cont/omen/Omen_hab1.png
+    - assets/images/cont/omen/Omen_hab2.png
+    - assets/images/cont/omen/Omen_hab3.png
+    - assets/images/cont/omen/Omen_hab4.png
+    - assets/images/cont/viper/Viper_hab1.png
+    - assets/images/cont/viper/Viper_hab2.png
+    - assets/images/cont/viper/Viper_hab3.png
+    - assets/images/cont/viper/Viper_hab4.png
+    - assets/images/duel/reyna/Reyna_hab1.png
+    - assets/images/duel/reyna/Reyna_hab2.png
+    - assets/images/duel/reyna/Reyna_hab3.png
+    - assets/images/duel/reyna/Reyna_hab4.png
+    - assets/images/duel/raze/Raze_hab1.png
+    - assets/images/duel/raze/Raze_hab2.png
+    - assets/images/duel/raze/Raze_hab3.png
+    - assets/images/duel/raze/Raze_hab4.png
+    - assets/images/duel/phoenix/Phoenix_hab1.png
+    - assets/images/duel/phoenix/Phoenix_hab2.png
+    - assets/images/duel/phoenix/Phoenix_hab3.png
+    - assets/images/duel/phoenix/Phoenix_hab4.png
+    - assets/images/init/kayo/KAYO_hab1.png
+    - assets/images/init/kayo/KAYO_hab2.png
+    - assets/images/init/kayo/KAYO_hab3.png
+    - assets/images/init/kayo/KAYO_hab4.png
+    - assets/images/init/skye/Skye_hab1.png
+    - assets/images/init/skye/Skye_hab2.png
+    - assets/images/init/skye/Skye_hab3.png
+    - assets/images/init/skye/Skye_hab4.png
+    - assets/images/init/sova/Sova_hab1.png
+    - assets/images/init/sova/Sova_hab2.png
+    - assets/images/init/sova/Sova_hab3.png
+    - assets/images/init/sova/Sova_hab4.png
+    - assets/images/sent/killjoy/Killjoy_hab1.png
+    - assets/images/sent/killjoy/Killjoy_hab2.png
+    - assets/images/sent/killjoy/Killjoy_hab3.png
+    - assets/images/sent/killjoy/Killjoy_hab4.png
+    - assets/images/sent/chamber/Chamber_hab1.png
+    - assets/images/sent/chamber/Chamber_hab2.png
+    - assets/images/sent/chamber/Chamber_hab3.png
+    - assets/images/sent/chamber/Chamber_hab4.png
+    - assets/images/sent/cypher/Cypher_hab1.png
+    - assets/images/sent/cypher/Cypher_hab2.png
+    - assets/images/sent/cypher/Cypher_hab3.png
+    - assets/images/sent/cypher/Cypher_hab4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

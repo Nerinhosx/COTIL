@@ -1,21 +1,27 @@
 class Character{
+  String name = "";
   String img = "";
   String desc = "";
   List<String> liHab = [];
 
-  String get getImg => this.img;
+  String getImg() => this.img;
 
-  set setImg(String img) => this.img = img;
+  setImg(String img) => this.img = img;
 
-  get getDescr => this.desc;
+  String getDescr() => this.desc;
 
-  set setDescr(String desc) => this.desc = desc;
+  setDescr(String desc) => this.desc = desc;
 
-  List<String> get getLiHab => this.liHab;
+  List<String> getLiHab() => this.liHab;
 
-  set setLiHab(List<String> liHab) => this.liHab = liHab;
+  setLiHab(List<String> liHab){ this.liHab = liHab; }
 
-  Character(String img, String desc /*List<String> liHab*/){
+  String getName() => this.name;
+
+  setName(String name) => this.name = name;
+
+  Character(String name, String img, String desc){
+    this.name = name;
     this.img = img;
     this.desc = desc;
   }

@@ -202,6 +202,23 @@ class _MyDuelistState extends State<MyDuelist> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                   ),
                 ),
+
+                Padding(
+                  padding: EdgeInsets.only(bottom: 20),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      "Voltar",
+                      style: TextStyle(fontFamily: "VavaFont", color: Colors.black),
+
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(255, 70, 85, 1),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

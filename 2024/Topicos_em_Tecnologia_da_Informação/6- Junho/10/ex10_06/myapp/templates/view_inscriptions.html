@@ -1,0 +1,35 @@
+<!-- myapp/templates/view_inscriptions.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+        <title>Inscrições</title> <!-- Define o título da página -->
+        {% load static %} <!-- Carrega a tag de arquivos estáticos do Django -->
+        <link rel="stylesheet" href="{% static 'styles.css' %}"> <!--Inclui o arquivo CSS -->
+    </head>
+    <body>
+        <h1>Lista de Inscrições</h1> <!-- Cabeçalho da página -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data de Nascimento</th>
+                    <th>Imagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for inscription in inscriptions %} <!-- Itera sobre a lista de inscrições -->
+                <tr>
+                    <td>{{ inscription.name }}</td>
+                    <td>{{ inscription.email }}</td>
+                    <td>{{ inscription.dob }}</td>
+                    <td>{{ inscription.image }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{% url 'index' %}"><button>Home</button></a> <!-- Botão para voltar à página inicial -->
+    </body>
+</html>

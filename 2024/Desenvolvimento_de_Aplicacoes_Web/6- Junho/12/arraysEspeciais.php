@@ -27,6 +27,27 @@
         echo $fruits . " - ";
     }
 
-    array_key_exists("ra", $a); //Verifica se existe a chave (1º parâmetro) no array (2º parâmetro)
+    $existe1 = array_key_exists("ra", $a); //Verifica se existe a chave (1º parâmetro) no array (2º parâmetro). Se existir, retorna true, se não, false
+    $keys = array_keys($a); //Retorna as chaves do array informado
+    $existe2 = array_search("ra", $a); //Busca se existe a chave (1º parâmetro) no array (2º parâmetro). Se existir, retorna a chave, se não, não retorna nada
+
+    array_push($a, "(19) 99768-4572");
+    print_r($a);
+
+    array_pop($a);
+    print_r($a);
+
+    array_shift($a);
+    print_r($a);
+
+    array_unshift($a);
+    print_r($a);
+
+    function insereTexto($valor){
+        return "Dado: " . $valor . "<br>";
+    }
+
+    $azinho = array_map("insereTexto", $a);
+    print_r($a);
 
 ?>

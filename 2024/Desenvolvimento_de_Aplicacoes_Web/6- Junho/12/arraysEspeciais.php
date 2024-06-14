@@ -27,4 +27,6 @@
         echo $fruits . " - ";
     }
 
+    array_key_exists("ra", $a); //Verifica se existe a chave (1º parâmetro) no array (2º parâmetro)
+
 ?>

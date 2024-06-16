@@ -1,0 +1,32 @@
+<!-- myapp/templates/signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+
+    <h1>Formulário de Inscrição</h1>
+    <form method="post" enctype="multipart/form-data"> <!-- Adicione enctype para suportar upload de arquivos -->
+
+        {% csrf_token %}
+        <label for="number">Número de Identificação:</label>
+        <input type="number" id="number" name="number" required><br><br>
+        <label for="local">Local:</label>
+        <input type="text" id="local" name="local" required><br><br>
+        <label for="image">Imagem:</label> <!-- Campo de upload de imagem -->
+
+        <input type="file" id="image" name="image"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <a href="{% url 'index' %}"><button>Home</button></a>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!-- myapp/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <title>Boas Vindas</title> <!-- Define o título da página -->
+    {% load static %} <!-- Carrega a tag de arquivos estáticos do Django -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Inclui o arquivo CSS -->
+</head>
+
+<body>
+    <h1>Bem-vindo ao nosso site!</h1> <!-- Cabeçalho da página -->
+    <div>
+        <a href="{% url 'signup' %}"><button>Cadastre-se</button></a>
+        <a href="{% url 'view_inscriptions' %}"><button>Visualizar itens</button></a>
+    </div>
+</body>
+
+</html>

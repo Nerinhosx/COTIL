@@ -1,15 +1,15 @@
 # myproject/urls.py
-from django.contrib import admin # Importa o módulo admin do Django
-from django.urls import path # Importa a função path
-from myapp import views # Importa as views do aplicativo myapp
+from django.contrib import admin
+from django.urls import path
+from myapp import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-path('admin/', admin.site.urls), # URL para a administração do site
-path('', views.index, name='index'), # URL para a página inicial
-path('signup/', views.signup, name='signup'), # URL para a páginade inscrição
-path('inscriptions/', views.view_inscriptions,name='view_inscriptions'), # URL para a página de visualização dasinscrições
+path('admin/', admin.site.urls),
+path('', views.index, name='index'),
+path('cadastrar/', views.signup, name='cadastrar'),
+path('cadastros/', views.view_inscriptions,name='view_cad'),
 ]
 
 if settings.DEBUG:

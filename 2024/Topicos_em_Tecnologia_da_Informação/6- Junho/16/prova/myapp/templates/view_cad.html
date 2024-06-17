@@ -1,6 +1,5 @@
-<!-- myapp/templates/view_inscriptions.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +16,7 @@
             <tr>
                 <th>Número</th>
                 <th>Local</th>
-                <th>Imagem</th> <!-- Cabeçalho para a imagem -->
+                <th>Imagem</th>
             </tr>
         </thead>
         <tbody>
@@ -27,10 +26,9 @@
                 <td>{{ inscription.number }}</td>
                 <td>{{ inscription.local }}</td>
                 <td>
-                    {% if inscription.image %} <!-- Verifica se há uma imagem -->
+                    {% if inscription.image %}
 
                     <img src="{{ inscription.image.url }}" alt="{{ inscription.number }}" width="100">
-                    <!-- Exibe a imagem -->
 
                     {% else %}
                     No image

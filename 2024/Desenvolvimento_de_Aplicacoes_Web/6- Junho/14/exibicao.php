@@ -24,4 +24,11 @@
     );
 
     $turma = $_GET["turma"];
+    
+    if(key_exists($turma, $turmas)){
+        //require_once();
+    }
+    else{
+        //require_once();
+    }
 ?>

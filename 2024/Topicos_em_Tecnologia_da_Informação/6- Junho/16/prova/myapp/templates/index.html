@@ -1,21 +1,20 @@
-<!-- myapp/templates/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a viewport para dispositivos móveis -->
-    <title>Boas Vindas</title> <!-- Define o título da página -->
-    {% load static %} <!-- Carrega a tag de arquivos estáticos do Django -->
-    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Inclui o arquivo CSS -->
+    <title>Boas Vindas</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 
 <body>
-    <h1>Bem-vindo ao nosso site!</h1> <!-- Cabeçalho da página -->
+    <h1>Confecções S.A.</h1>
+    <h2>Bem-vindo ao nosso site!</h2>
     <div>
-        <a href="{% url 'signup' %}"><button>Cadastre-se</button></a>
-        <a href="{% url 'view_inscriptions' %}"><button>Visualizar itens</button></a>
+        <a href="{% url 'cadastrar' %}"><button>Cadastrar itens</button></a>
+        <a href="{% url 'view_cad' %}"><button>Visualizar itens cadastrados</button></a>
     </div>
 </body>
 

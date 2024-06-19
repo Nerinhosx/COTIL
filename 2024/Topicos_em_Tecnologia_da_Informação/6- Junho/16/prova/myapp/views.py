@@ -9,13 +9,13 @@ def signup(request):
     if request.method == 'POST':
         number = request.POST['number']
         local = request.POST['local']
-        image = request.FILES.get('image') # Obtém o arquivo de imagem
+        image = request.FILES.get('image')
 
-        Inscription.objects.create(number=number, local=local, image=image) # Salva a inscrição com a imagem
-        return redirect('view_inscriptions')
+        Inscription.objects.create(number=number, local=local, image=image)
+        return redirect('view_cad')
 
-    return render(request, 'signup.html')
+    return render(request, 'cadastro.html')
 
 def view_inscriptions(request):
     inscriptions = Inscription.objects.all()
-    return render(request, 'view_inscriptions.html', {'inscriptions':inscriptions})
+    return render(request, 'view_cad.html', {'inscriptions':inscriptions})

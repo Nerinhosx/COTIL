@@ -1,57 +1,44 @@
-/* myapp/static/styles.css */
 body {
-    font-family: Arial, sans-serif;
-    /* Define a fonte do corpo */
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    /* Define a cor de fundo */
+    background-color: #0d1d3a;
+    color: rgb(118, 255, 253);
 }
 
 h1 {
-    color: #333;
-    /* Define a cor do cabeçalho */
+    color: #42f4f2;
 }
 
 button {
-    background-color: #4CAF50;
-    /* Define a cor de fundo do botão */
+    background-color: #0d4599;
     color: white;
     padding: 10px 20px;
     border: none;
 
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 button:hover {
-    background-color: #45a049;
-    /* Define a cor do botão ao passar o
-    mouse */
+    background-color: #0355cf;
 }
 
 form {
-    background-color: white;
+    background-color: #087299;
     padding: 40px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Adiciona uma sombra
-    ao formulário */
-}
-
-label {
-    display: block;
-    margin-top: 10px;
+    box-shadow: 7px 7px 10px #025472;
+    color: #66ffc9;
 }
 
 input {
-
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin-top: 5px;
 }
@@ -60,17 +47,18 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    color: #f8e8d0;
+    background-color: #098ebe;
 }
 
 th,
 td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #060c47;
 }
 
-th {
-    background-color: #f2f2f2;
-    /* Define a cor de fundo do cabeçalho
-    da tabela */
+th{
+    background-color: #054c66;
+    color: #f5fe61;
 }

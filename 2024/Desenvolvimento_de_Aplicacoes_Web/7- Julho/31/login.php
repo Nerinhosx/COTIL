@@ -51,6 +51,8 @@
             }
 
             $pdo = Null;
+        } else{
+            echo "Informe o login e a senha!"
         }
     } 
 ?>

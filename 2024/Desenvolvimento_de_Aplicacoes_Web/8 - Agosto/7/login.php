@@ -42,7 +42,22 @@
                 $rows = $stmt->rowCount();
 
                 if($rows>0){
-                    echo "Usuário Válido";
+                    session_start();
+                    
+                    $_SESSION["logado"] = true;
+
+                    $userData = $stmt->fetch();
+                    $tipo = $userData["tipo"];
+
+                    if($tipo == "PROFESSOR"){
+                        header("location: professor.php");
+                    }
+                    else if($tipo == "ALUNO") {
+                        header("location: aluno.php");
+                    }
+                    else if($tipo == "DIRETOR"){
+                        header("location: diretor.php");
+                    }
                 } else{
                     echo "Login Inválido";
                 }

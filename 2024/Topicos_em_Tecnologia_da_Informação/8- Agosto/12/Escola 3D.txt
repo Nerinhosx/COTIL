@@ -1,0 +1,323 @@
+|     Nome     |   Nota   |   Disciplina   |
+|--------------|----------|----------------|
+|   João       |   9.5    |   Impressão 3D |
+|   Maria      |   8.7    |   Design 3D    |
+|   Pedro      |   7.2    |   Tecnologia   |
+|   Ana        |   9.0    |   Impressão 3D |
+|   Lucas      |   8.0    |   Design 3D    |
+|   Beatriz    |   7.8    |   Tecnologia   |
+|   Guilherme  |   8.9    |   Impressão 3D |
+|   Laura      |   7.5    |   Design 3D    |
+|   Rafael     |   7.1    |   Tecnologia   |
+|   Camila     |   9.3    |   Impressão 3D |
+|   Gabriel    |   8.2    |   Design 3D    |
+|   Sofia      |   7.7    |   Tecnologia   |
+|   Mateus     |   9.1    |   Impressão 3D |
+|   Isabela    |   7.4    |   Design 3D    |
+|   Thiago     |   7.0    |   Tecnologia   |
+|   Larissa    |   8.8    |   Impressão 3D |
+|   Daniel     |   8.5    |   Design 3D    |
+|   Alice      |   7.9    |   Tecnologia   |
+|   André      |   9.2    |   Impressão 3D |
+|   Clara      |   7.3    |   Design 3D    |
+|   Gustavo    |   6.8    |   Tecnologia   |
+|   Helena     |   8.6    |   Impressão 3D |
+|   Diego      |   8.3    |   Design 3D    |
+|   Julia      |   7.6    |   Tecnologia   |
+|   Luiz       |   9.4    |   Impressão 3D |
+|   Fernanda   |   7.7    |   Design 3D    |
+|   Carlos     |   7.2    |   Tecnologia   |
+|   Bruna      |   8.7    |   Impressão 3D |
+|   Ricardo    |   8.1    |   Design 3D    |
+|   Aline      |   7.0    |   Tecnologia   |
+|   Leonardo   |   9.0    |   Impressão 3D |
+|   Juliana    |   7.5    |   Design 3D    |
+|   Marcelo    |   7.4    |   Tecnologia   |
+|   Amanda     |   8.5    |   Impressão 3D |
+|   Rodrigo    |   8.2    |   Design 3D    |
+|   Sofia      |   7.9    |   Tecnologia   |
+|   Luana      |   9.3    |   Impressão 3D |
+|   Gabriel    |   7.1    |   Design 3D    |
+|   Luiz       |   6.9    |   Tecnologia   |
+|   Isabella   |   8.9    |   Impressão 3D |
+|   Mariana    |   7.6    |   Design 3D    |
+|   Vitor      |   7.3    |   Tecnologia   |
+|   Vanessa    |   9.1    |   Impressão 3D |
+|   Matheus    |   7.2    |   Design 3D    |
+|   Laura      |   7.0    |   Tecnologia   |
+|   João       |   8.8    |   Impressão 3D |
+|   Carol      |   8.4    |   Design 3D    |
+|   Rafaela    |   7.7    |   Tecnologia   |
+|   Eduardo    |   9.0    |   Impressão 3D |
+|   Letícia    |   7.9    |   Design 3D    |
+|   Marcos     |   7.5    |   Tecnologia   |
+|   Larissa    |   8.6    |   Impressão 3D |
+|   Daniel     |   8.2    |   Design 3D    |
+|   Bianca     |   7.2    |   Tecnologia   |
+|   Lucas      |   9.3    |   Impressão 3D |
+|   Natália    |   7.1    |   Design 3D    |
+|   Gustavo    |   6.8    |   Tecnologia   |
+|   Elisa      |   8.9    |   Impressão 3D |
+|   Rafael     |   7.4    |   Design 3D    |
+|   Amanda     |   7.0    |   Tecnologia   |
+|   Felipe     |   9.2    |   Impressão 3D |
+|   Carolina   |   7.5    |   Design 3D    |
+|   André      |   7.3    |   Tecnologia   |
+|   Camila     |   8.8    |   Impressão 3D |
+|   Guilherme  |   8.1    |   Design 3D    |
+|   Patricia   |   7.6    |   Tecnologia   |
+|   Thiago     |   8.7    |   Impressão 3D |
+|   Bruna      |   7.2    |   Design 3D    |
+|   Lucas      |   6.9    |   Tecnologia   |
+|   Vanessa    |   9.0    |   Impressão 3D |
+|   Rafaela    |   7.4    |   Design 3D    |
+|   Marcos     |   7.1    |   Tecnologia   |
+|   Larissa    |   8.5    |   Impressão 3D |
+|   Daniel     |   8.2    |   Design 3D    |
+|   Bianca     |   7.0    |   Tecnologia   |
+|   Lucas      |   9.1    |   Impressão 3D |
+|   Natália    |   7.3    |   Design 3D    |
+|   Gustavo    |   6.7    |   Tecnologia   |
+|   Elisa      |   8.8    |   Impressão 3D |
+|   Rafael     |   7.5    |   Design 3D    |
+|   Amanda     |   7.1    |   Tecnologia   |
+|   Felipe     |   9.4    |   Impressão 3D |
+|   Carolina   |   7.7    |   Design 3D    |
+|   André      |   7.2    |   Tecnologia   |
+|   Camila     |   8.9    |   Impressão 3D |
+|   Guilherme  |   8.3    |   Design 3D    |
+|   Patricia   |   7.6    |   Tecnologia   |
+|   Thiago     |   8.6    |   Impressão 3D |
+|   Bruna      |   7.0    |   Design 3D    |
+|   Lucas      |   6.8    |   Tecnologia   |
+|   Vanessa    |   9.2    |   Impressão 3D |
+|   Rafaela    |   7.3    |   Design 3D    |
+|   Marcos     |   7.0    |   Tecnologia   |
+|   Larissa    |   8.7    |   Impressão 3D |
+|   Daniel     |   8.1    |   Design 3D    |
+|   Bianca     |   7.5    |   Tecnologia   |
+|   Lucas      |   9.0    |   Impressão 3D |
+|   Natália    |   7.2    |   Design 3D    |
+|   Gustavo    |   6.6    |   Tecnologia   |
+|   Elisa      |   8.7    |   Impressão 3D |
+|   Rafael     |   7.6    |   Design 3D    |
+|   Amanda     |   7.2    |   Tecnologia   |
+|   Felipe     |   9.3    |   Impressão 3D |
+|   Carolina   |   7.8    |   Design 3D    |
+|   André      |   7.1    |   Tecnologia   |
+|   Camila     |   8.6    |   Impressão 3D |
+|   Guilherme  |   8.4    |   Design 3D    |
+|   Patricia   |   7.5    |   Tecnologia   |
+|   Thiago     |   8.5    |   Impressão 3D |
+|   Bruna      |   7.0    |   Design 3D    |
+|   Lucas      |   6.7    |   Tecnologia   |
+|   Vanessa    |   9.1    |   Impressão 3D |
+|   Rafaela    |   7.4    |   Design 3D    |
+|   Marcos     |   6.9    |   Tecnologia   |
+|   Larissa    |   8.6    |   Impressão 3D |
+|   Daniel     |   8.3    |   Design 3D    |
+|   Bianca     |   7.4    |   Tecnologia   |
+|   Lucas      |   8.9    |   Impressão 3D |
+|   Natália    |   7.5    |   Design 3D    |
+|   Gustavo    |   6.5    |   Tecnologia   |
+|   Elisa      |   8.6    |   Impressão 3D |
+|   Rafael     |   7.7    |   Design 3D    |
+|   Amanda     |   7.3    |   Tecnologia   |
+|   Felipe     |   9.2    |   Impressão 3D |
+|   Carolina   |   7.9    |   Design 3D    |
+|   André      |   7.0    |   Tecnologia   |
+|   Camila     |   8.8    |   Impressão 3D |
+|   Guilherme  |   8.2    |   Design 3D    |
+|   Patricia   |   7.4    |   Tecnologia   |
+|   Thiago     |   8.4    |   Impressão 3D |
+|   Bruna      |   7.2    |   Design 3D    |
+|   Lucas      |   6.6    |   Tecnologia   |
+|   Vanessa    |   9.0    |   Impressão 3D |
+|   Rafaela    |   7.5    |   Design 3D    |
+|   Marcos     |   6.8    |   Tecnologia   |
+|   Larissa    |   8.5    |   Impressão 3D |
+|   Daniel     |   8.2    |   Design 3D    |
+|   Bianca     |   7.3    |   Tecnologia   |
+|   Lucas      |   8.8    |   Impressão 3D |
+|   Natália    |   7.6    |   Design 3D    |
+|   Gustavo    |   6.4    |   Tecnologia   |
+|   Elisa      |   8.5    |   Impressão 3D |
+|   Rafael     |   7.8    |   Design 3D    |
+|   Amanda     |   7.4    |   Tecnologia   |
+|   Felipe     |   9.1    |   Impressão 3D |
+|   Carolina   |   7.7    |   Design 3D    |
+|   André      |   6.9    |   Tecnologia   |
+|   Camila     |   8.7    |   Impressão 3D |
+|   Guilherme  |   8.1    |   Design 3D    |
+|   Patricia   |   7.3    |   Tecnologia   |
+|   Thiago     |   8.3    |   Impressão 3D |
+|   Bruna      |   7.1    |   Design 3D    |
+|   Lucas      |   6.5    |   Tecnologia   |
+|   Vanessa    |   8.9    |   Impressão 3D |
+|   Rafaela    |   7.6    |   Design 3D    |
+|   Marcos     |   6.7    |   Tecnologia   |
+|   Larissa    |   8.4    |   Impressão 3D |
+|   Daniel     |   8.1    |   Design 3D    |
+|   Bianca     |   7.2    |   Tecnologia   |
+|   Lucas      |   8.7    |   Impressão 3D |
+|   Natália    |   7.7    |   Design 3D    |
+|   Gustavo    |   6.3    |   Tecnologia   |
+|   Elisa      |   8.4    |   Impressão 3D |
+|   Rafael     |   7.9    |   Design 3D    |
+|   Amanda     |   7.5    |   Tecnologia   |
+|   Felipe     |   9.0    |   Impressão 3D |
+|   Carolina   |   7.8    |   Design 3D    |
+|   André      |   6.8    |   Tecnologia   |
+|   Camila     |   8.6    |   Impressão 3D |
+|   Guilherme  |   8.0    |   Design 3D    |
+|   Patricia   |   7.2    |   Tecnologia   |
+|   Thiago     |   8.2    |   Impressão 3D |
+|   Bruna      |   7.0    |   Design 3D    |
+|   Lucas      |   6.4    |   Tecnologia   |
+|   Vanessa    |   8.8    |   Impressão 3D |
+|   Rafaela    |   7.7    |   Design 3D    |
+|   Marcos     |   6.6    |   Tecnologia   |
+|   Larissa    |   8.3    |   Impressão 3D |
+|   Daniel     |   8.0    |   Design 3D    |
+|   Bianca     |   7.1    |   Tecnologia   |
+|   Lucas      |   8.6    |   Impressão 3D |
+|   Natália    |   7.6    |   Design 3D    |
+|   Gustavo    |   6.2    |   Tecnologia   |
+|   Elisa      |   8.3    |   Impressão 3D |
+|   Rafael     |   7.8    |   Design 3D    |
+|   Amanda     |   7.4    |   Tecnologia   |
+|   Felipe     |   8.9    |   Impressão 3D |
+|   Carolina   |   7.6    |   Design 3D    |
+|   André      |   6.7    |   Tecnologia   |
+|   Camila     |   8.5    |   Impressão 3D |
+|   Guilherme  |   7.9    |   Design 3D    |
+|   Patricia   |   7.1    |   Tecnologia   |
+|   Thiago     |   8.1    |   Impressão 3D |
+|   Bruna      |   6.9    |   Design 3D    |
+|   Lucas      |   6.3    |   Tecnologia   |
+|   Vanessa    |   8.7    |   Impressão 3D |
+|   Rafaela    |   7.5    |   Design 3D    |
+|   Marcos     |   6.5    |   Tecnologia   |
+|   Larissa    |   8.2    |   Impressão 3D |
+|   Daniel     |   7.9    |   Design 3D    |
+|   Bianca     |   7.0    |   Tecnologia   |
+|   Lucas      |   8.5    |   Impressão 3D |
+|   Natália    |   7.4    |   Design 3D    |
+|   Gustavo    |   6.1    |   Tecnologia   |
+|   Elisa      |   8.2    |   Impressão 3D |
+|   Rafael     |   7.7    |   Design 3D    |
+|   Amanda     |   7.3    |   Tecnologia   |
+|   Felipe     |   8.8    |   Impressão 3D |
+|   Carolina   |   7.4    |   Design 3D    |
+|   André      |   6.6    |   Tecnologia   |
+|   Camila     |   8.4    |   Impressão 3D |
+|   Guilherme  |   7.8    |   Design 3D    |
+|   Patricia   |   7.0    |   Tecnologia   |
+|   Thiago     |   8.0    |   Impressão 3D |
+|   Bruna      |   6.8    |   Design 3D    |
+|   Lucas      |   6.2    |   Tecnologia   |
+|   Vanessa    |   8.6    |   Impressão 3D |
+|   Rafaela    |   7.4    |   Design 3D    |
+|   Marcos     |   6.4    |   Tecnologia   |
+|   Larissa    |   8.1    |   Impressão 3D |
+|   Daniel     |   7.8    |   Design 3D    |
+|   Bianca     |   6.9    |   Tecnologia   |
+|   Lucas      |   8.4    |   Impressão 3D |
+|   Natália    |   7.3    |   Design 3D    |
+|   Gustavo    |   6.0    |   Tecnologia   |
+|   Elisa      |   8.1    |   Impressão 3D |
+|   Rafael     |   7.6    |   Design 3D    |
+|   Amanda     |   7.2    |   Tecnologia   |
+|   Felipe     |   8.7    |   Impressão 3D |
+|   Carolina   |   7.3    |   Design 3D    |
+|   André      |   6.5    |   Tecnologia   |
+|   Camila     |   8.3    |   Impressão 3D |
+|   Guilherme  |   7.7    |   Design 3D    |
+|   Patricia   |   6.8    |   Tecnologia   |
+|   Thiago     |   7.9    |   Impressão 3D |
+|   Bruna      |   6.7    |   Design 3D    |
+|   Lucas      |   6.1    |   Tecnologia   |
+|   Vanessa    |   8.5    |   Impressão 3D |
+|   Rafaela    |   7.2    |   Design 3D    |
+|   Marcos     |   6.3    |   Tecnologia   |
+|   Larissa    |   8.0    |   Impressão 3D |
+|   Daniel     |   7.7    |   Design 3D    |
+|   Bianca     |   6.8    |   Tecnologia   |
+|   Lucas      |   8.3    |   Impressão 3D |
+|   Natália    |   7.2    |   Design 3D    |
+|   Gustavo    |   5.9    |   Tecnologia   |
+|   Elisa      |   8.0    |   Impressão 3D |
+|   Rafael     |   7.5    |   Design 3D    |
+|   Amanda     |   7.1    |   Tecnologia   |
+|   Felipe     |   8.6    |   Impressão 3D |
+|   Carolina   |   7.1    |   Design 3D    |
+|   André      |   6.4    |   Tecnologia   |
+|   Camila     |   8.2    |   Impressão 3D |
+|   Guilherme  |   7.6    |   Design 3D    |
+|   Patricia   |   6.7    |   Tecnologia   |
+|   Thiago     |   7.8    |   Impressão 3D |
+|   Bruna      |   6.6    |   Design 3D    |
+|   Lucas      |   6.0    |   Tecnologia   |
+|   Vanessa    |   8.4    |   Impressão 3D |
+|   Rafaela    |   7.1    |   Design 3D    |
+|   Marcos     |   6.2    |   Tecnologia   |
+|   Larissa    |   7.9    |   Impressão 3D |
+|   Daniel     |   7.6    |   Design 3D    |
+|   Bianca     |   6.7    |   Tecnologia   |
+|   Lucas      |   8.2    |   Impressão 3D |
+|   Natália    |   7.1    |   Design 3D    |
+|   Gustavo    |   5.8    |   Tecnologia   |
+|   Elisa      |   7.9    |   Impressão 3D |
+|   Rafael     |   7.4    |   Design 3D    |
+|   Amanda     |   7.0    |   Tecnologia   |
+|   Felipe     |   8.5    |   Impressão 3D |
+|   Carolina   |   7.0    |   Design 3D    |
+|   André      |   6.3    |   Tecnologia   |
+|   Camila     |   8.1    |   Impressão 3D |
+|   Guilherme  |   7.5    |   Design 3D    |
+|   Patricia   |   6.6    |   Tecnologia   |
+|   Thiago     |   7.7    |   Impressão 3D |
+|   Bruna      |   6.5    |   Design 3D    |
+|   Lucas      |   5.9    |   Tecnologia   |
+|   Vanessa    |   8.3    |   Impressão 3D |
+|   Rafaela    |   7.0    |   Design 3D    |
+|   Marcos     |   6.1    |   Tecnologia   |
+|   Larissa    |   7.8    |   Impressão 3D |
+|   Daniel     |   7.5    |   Design 3D    |
+|   Bianca     |   6.6    |   Tecnologia   |
+|   Lucas      |   8.1    |   Impressão 3D |
+|   Natália    |   7.0    |   Design 3D    |
+|   Gustavo    |   5.7    |   Tecnologia   |
+|   Elisa      |   7.8    |   Impressão 3D |
+|   Rafael     |   7.3    |   Design 3D    |
+|   Amanda     |   6.9    |   Tecnologia   |
+|   Felipe     |   8.4    |   Impressão 3D |
+|   Carolina   |   6.9    |   Design 3D    |
+|   André      |   6.2    |   Tecnologia   |
+|   Camila     |   8.0    |   Impressão 3D |
+|   Guilherme  |   7.4    |   Design 3D    |
+|   Patricia   |   6.5    |   Tecnologia   |
+|   Thiago     |   7.6    |   Impressão 3D |
+|   Bruna      |   6.4    |   Design 3D    |
+|   Lucas      |   5.8    |   Tecnologia   |
+|   Vanessa    |   8.2    |   Impressão 3D |
+|   Rafaela    |   6.8    |   Design 3D    |
+|   Marcos     |   6.0    |   Tecnologia   |
+|   Larissa    |   7.7    |   Impressão 3D |
+|   Daniel     |   7.2    |   Design 3D    |
+|   Bianca     |   6.4    |   Tecnologia   |
+|   Lucas      |   8.0    |   Impressão 3D |
+|   Natália    |   6.9    |   Design 3D    |
+|   Gustavo    |   5.6    |   Tecnologia   |
+|   Elisa      |   7.7    |   Impressão 3D |
+|   Rafael     |   7.2    |   Design 3D    |
+|   Amanda     |   6.8    |   Tecnologia   |
+|   Felipe     |   8.3    |   Impressão 3D |
+|   Carolina   |   6.8    |   Design 3D    |
+|   André      |   6.1    |   Tecnologia   |
+|   Camila     |   7.9    |   Impressão 3D |
+|   Guilherme  |   7.3    |   Design 3D    |
+|   Patricia   |   6.4    |   Tecnologia   |
+|   Thiago     |   7.5    |   Impressão 3D |
+|   Bruna      |   6.3    |   Design 3D    |
+|   Lucas      |   4.2    |   Tecnologia   |

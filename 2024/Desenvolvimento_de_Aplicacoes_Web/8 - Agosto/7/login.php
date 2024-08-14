@@ -50,12 +50,15 @@
                     $tipo = $userData["tipo"];
 
                     if($tipo == "PROFESSOR"){
+                        $_SESSION["logado"] = "PROFESSOR";
                         header("location: professor.php");
                     }
                     else if($tipo == "ALUNO") {
+                        $_SESSION["logado"] = "ALUNO";
                         header("location: aluno.php");
                     }
                     else if($tipo == "DIRETOR"){
+                        $_SESSION["logado"] = "DIRETOR";
                         header("location: diretor.php");
                     }
                 } else{

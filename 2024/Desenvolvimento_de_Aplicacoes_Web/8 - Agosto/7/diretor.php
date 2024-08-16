@@ -9,7 +9,7 @@
 
     <?php
         session_start();
-        if(isset($_SESSION["logado"])){
+        if(isset($_SESSION["logado"]) && $_SESSION["logado"] == "DIRETOR"){
             echo "<h2>Sistema Acadêmico</h2>
                 <h3>Bem-Vindo a área do diretor!</h3>
                 <br><br>

@@ -40,3 +40,43 @@
     </form>
 </body>
 </html>
+<?php
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+        $ra = $_POST["ra"];
+        trim($ra);
+        $nome = $_POST["nome"];
+        trim($nome);
+        $curso = $_POST["curso"];
+        trim($curso);
+
+        if($ra!="" && $nome!=""){
+            try{
+                include("conexaoBD.php");
+
+                $stmt = $pdo->prepare("select * from alunos where ra = :ra");
+                $stmt->bindParam(":ra", $ra);
+                $stmt->execute();
+
+                $rows = $stmt->rowCount();
+                if($rows<=0){
+                    $stmt = $pdo->prepare("insert into alunos (ra, nome, curso) values (:ra, :nome, :curso)");
+                    $stmt->bindParam(":ra", $ra);
+                    $stmt->bindParam(":nome", $nome);
+                    $stmt->bindParam(":curso", $curso);
+                    $stmt->execute();
+                    echo "<span id='sucess'>Aluno cadastrado com sucesso!</span>";
+                }
+                else{
+                    echo "<span id='error'>Cadastro de aluno falho: RA já cadastrado.</span>";
+                }
+            }
+            catch(PDOException $e){
+                echo "Erro:" . $e->getMessage();
+            }
+            $pdo = null;
+        }
+        else{
+            echo "<span id='warning'>Cadastro de aluno falho: RA e nome são obrigatórios.</span>";
+        }
+    }
+?>

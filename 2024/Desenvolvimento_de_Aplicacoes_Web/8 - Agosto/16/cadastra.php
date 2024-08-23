@@ -10,6 +10,33 @@
             color: rgb(255, 48, 64);
             background-color: rgb(15, 25, 35);
         }
+
+        #sucess{
+            color: rgb(139, 232, 44);
+            font-weight: bold;
+        }
+
+        #error{
+            color: red;
+            font-weight: bold;
+        }
+
+        #warning{
+            color: yellow;
+            font-weight: bold;
+        }
+
+        a{
+            color: rgb(0, 218, 201);
+        }
+
+        a:hover{
+            color: rgb(0, 253, 208);
+        }
+
+        input{
+            background-color: rgb(44, 72, 101);
+        }
     </style>
 </head>
 <body>

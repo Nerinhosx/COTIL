@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +34,9 @@
             color: rgb(0, 253, 208);
         }
 
-        input{
+        input, select, option{
             background-color: rgb(44, 72, 101);
+            color: aliceblue;
         }
     </style>
 </head>

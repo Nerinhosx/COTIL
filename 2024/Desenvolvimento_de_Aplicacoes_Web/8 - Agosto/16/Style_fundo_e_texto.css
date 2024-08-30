@@ -1,0 +1,17 @@
+body{
+    color: rgb(255, 48, 64);
+    background-color: rgb(15, 25, 35);
+}
+
+input, select, option{
+    background-color: rgb(44, 72, 101);
+    color: aliceblue;
+}
+
+a{
+    color: rgb(0, 218, 201);
+}
+
+a:hover{
+    color: rgb(0, 253, 208);
+}

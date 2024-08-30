@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="stylesheet" type="text/css" href="Style_fundo_e_texto.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD - Controle de Alunos</title>
@@ -12,9 +15,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-            color: rgb(255, 48, 64);
-            background-color: rgb(15, 25, 35);
         }
 
         div{
@@ -31,8 +31,6 @@
 
         input{
             margin: 10px;
-            background-color: rgb(44, 72, 101);
-            color: blanchedalmond;
         }
 
         h2{
@@ -47,7 +45,7 @@
         <form>
             <input type="button" value = "Cadastrar" onclick="window.open('cadastra.php', '_top');">
 
-            <input type="button" value="Consultar" onclick="window.open('consulta.php', '_top')">
+            <input type="button" value="Consultar" onclick="window.open('consultaPorPost.php', '_top')">
         </form>
     </div>
 

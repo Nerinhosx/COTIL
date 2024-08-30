@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="stylesheet" type="text/css" href="Style_fundo_e_texto.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Alunos</title>
 
     <style>
-        body{
-            color: rgb(255, 48, 64);
-            background-color: rgb(15, 25, 35);
-        }
-
         #sucess{
             color: rgb(139, 232, 44);
             font-weight: bold;
@@ -24,19 +22,6 @@
         #warning{
             color: yellow;
             font-weight: bold;
-        }
-
-        a{
-            color: rgb(0, 218, 201);
-        }
-
-        a:hover{
-            color: rgb(0, 253, 208);
-        }
-
-        input, select, option{
-            background-color: rgb(44, 72, 101);
-            color: aliceblue;
         }
     </style>
 </head>

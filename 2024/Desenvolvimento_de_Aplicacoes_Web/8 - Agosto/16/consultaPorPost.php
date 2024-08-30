@@ -3,18 +3,13 @@
 <head>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-
+    <link rel="stylesheet" type="text/css" href="Style_fundo_e_texto.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Alunos</title>
 
     <style>
-        body{
-            color: rgb(255, 48, 64);
-            background-color: rgb(15, 25, 35);
-        }
-
         #sucess{
             color: rgb(139, 232, 44);
             font-weight: bold;
@@ -28,19 +23,6 @@
         #warning{
             color: yellow;
             font-weight: bold;
-        }
-
-        a{
-            color: rgb(0, 218, 201);
-        }
-
-        a:hover{
-            color: rgb(0, 253, 208);
-        }
-
-        input{
-            background-color: rgb(44, 72, 101);
-            color: aliceblue;
         }
 
         td{
@@ -89,8 +71,10 @@
         try{
             $stmt->execute();
 
+            echo "<form method='post'>";
             echo "<table border='1px' cellspacing='0'>";
             echo "<tr>";
+            echo "<th></th>";
             echo "<th>RA</th>";
             echo "<th>Nome</th>";
             echo "<th>Curso</th>";
@@ -99,23 +83,16 @@
             
             while($row=$stmt->fetch()){
                 echo "<tr>";
+                echo "<td><input type='radio' name='raAluno' value='". $row["ra"] ."'></td>";
                 echo "<td>" . $row["ra"] . "</td>";
                 echo "<td>" . $row["nome"] . "</td>";
                 echo "<td>" . $row["curso"] . "</td>";
-
-                //Método para exclusão de aluno
-                echo "<td>"; 
-                echo "<a href='exclusao.php?raAl=". $row["ra"] ."'><span class='material-symbols-outlined'>delete</span></a>";
-                echo "</td>";
-
-                //Método para edição de aluno
-                echo "<td>"; 
-                echo "<a href='edicao.php?raAl=". $row["ra"] ."'><span class='material-symbols-outlined'>edit_note</span></a>";
-                echo "</td>";
-
                 echo "</tr>";
             }
-            echo "</table>";
+            echo "</table><br>";
+            echo "<button type='submit' formaction='exclusao.php'>Excluir Aluno</button>";
+            echo "<button type='submit' formaction='edicao.php'>Editar Aluno</button>";
+            echo "</form>";
         }
         catch(PDOException $e){
             echo "Erro: " . $e->getMessage();

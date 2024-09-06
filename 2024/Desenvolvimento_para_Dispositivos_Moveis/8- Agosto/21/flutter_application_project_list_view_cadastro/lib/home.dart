@@ -146,7 +146,13 @@ class _MyHomeState extends State<MyHome> {
                           setState(() {});
                         }
                       },
-                      child: Text("Cadastrar"),
+                      child: Text(
+                        "Cadastrar",
+                        style: TextStyle(color: Color.fromRGBO(139, 232, 44, 1)),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll(Color.fromRGBO(0, 109, 58, 1)),
+                      ),
                     ),
                   ),
 
@@ -157,7 +163,13 @@ class _MyHomeState extends State<MyHome> {
                         clearAll();
                         setState(() {});
                       },
-                      child: Text("Limpar"),
+                      child: Text(
+                        "Limpar",
+                        style: TextStyle(color: Color.fromRGBO(139, 232, 44, 1)),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll(Color.fromRGBO(0, 109, 58, 1)),
+                      ),
                     ),
                   ),
                 ],

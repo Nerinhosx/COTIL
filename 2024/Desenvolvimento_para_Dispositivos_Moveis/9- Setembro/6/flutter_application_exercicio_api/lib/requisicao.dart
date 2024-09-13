@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_exercicio_api/item.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class MyRequisicao extends StatefulWidget {
   const MyRequisicao({super.key});
@@ -16,15 +16,15 @@ class _MyRequisicaoState extends State<MyRequisicao> {
   TextEditingController idCtrl = TextEditingController();
   String apiData = "";
   String tipo = "";
-  String i1 = "";
-  String i2 = "";
-  String i3 = "";
-  String i4 = "";
-  String i5 = "";
   Item item = Item();
 
   Future<Item> requisicao(String tipo, String id) async{
-    var url = Uri.parse(" https://swapi.dev/api/${tipo}/${id}");
+    String i1 = "";
+    String i2 = "";
+    String i3 = "";
+    String i4 = "";
+    String i5 = "";
+    var url = Uri.parse("https://swapi.dev/api/${tipo}/${id}");
     http.Response response;
     response = await http.get(url);
     apiData = response.body;
@@ -45,11 +45,11 @@ class _MyRequisicaoState extends State<MyRequisicao> {
           break;
         }
         case 'planets':{
-          i1 = formData[''];
-          i2 = formData[''];
-          i3 = formData[''];
-          i4 = formData[''];
-          i5 = formData[''];
+          i1 = "Nome: ${formData['name']}";
+          i2 = "Diâmetro: ${formData['diameter']}";
+          i3 = "Tempo de rotação (em horas): ${formData['rotation_period']}";
+          i4 = "Tempo de translação (em dias): ${formData['orbital_period']}";
+          i5 = "Força gravitacional do planeta: ${formData['gravity']}";
           item.setInfo1(i1);
           item.setInfo2(i2);
           item.setInfo3(i3);
@@ -58,11 +58,11 @@ class _MyRequisicaoState extends State<MyRequisicao> {
           break;
         }
         case 'starships':{
-          i1 = formData[''];
-          i2 = formData[''];
-          i3 = formData[''];
-          i4 = formData[''];
-          i5 = formData[''];
+          i1 = "Nome: ${formData['name']}";
+          i2 = "Modelo: ${formData['model']}";
+          i3 = "Classe de nave: ${formData['starship_class']}";
+          i4 = "Classe de hyperdrive: ${formData['hyperdrive_rating']}";
+          i5 = "Preço (em créditos): ${formData['cost_in_credits']}";
           item.setInfo1(i1);
           item.setInfo2(i2);
           item.setInfo3(i3);
@@ -161,6 +161,19 @@ class _MyRequisicaoState extends State<MyRequisicao> {
                 setState(() {});
               },
             ),
+
+            Padding(
+              padding: EdgeInsets.only(top: 30),
+              child: Column(
+                children: [
+                  Text(item.info1, style: TextStyle(color: Color.fromRGBO(171, 235, 255, 1))),
+                  Text(item.info2, style: TextStyle(color: Color.fromRGBO(171, 235, 255, 1))),
+                  Text(item.info3, style: TextStyle(color: Color.fromRGBO(171, 235, 255, 1))),
+                  Text(item.info4, style: TextStyle(color: Color.fromRGBO(171, 235, 255, 1))),
+                  Text(item.info5, style: TextStyle(color: Color.fromRGBO(171, 235, 255, 1))),
+                ],
+              ),
+            )
           ],
         ),
       ),

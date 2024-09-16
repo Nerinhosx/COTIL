@@ -1,0 +1,3 @@
+Total de Projetos = COUNTROWS('Projetos')
+Valor Total de Orçamento = SUM(Projetos[Valor Orçado])
+Media em Dias Duracao Projeto = AVERAGEX(Projetos, DATEDIFF(Projetos[Data Início],Projetos[Data Termino], DAY))

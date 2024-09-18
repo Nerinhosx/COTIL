@@ -78,7 +78,6 @@
             echo "<th>RA</th>";
             echo "<th>Nome</th>";
             echo "<th>Curso</th>";
-            echo "<th colspan='2'></th>";
             echo "</tr>";
             
             while($row=$stmt->fetch()){

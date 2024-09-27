@@ -30,7 +30,8 @@
     <hr>
 
     <h2>Cadastro de Alunos</h2>
-    <form method="POST">
+    <!-- Form com enctype para indicar que serão enviados dados binários além de textuais -->
+    <form method="POST" enctype="multipart/form-data">
         RA:<br>
         <input type="text" size="30" name="ra"><br><br>
 
@@ -48,13 +49,19 @@
             <option value="Qualidade">Qualidade</option>
         </select><br><br>
 
+        Foto:<br>
+        <input type="file" name="foto" accept="image/*"><br><br>
+
         <input type="submit" value="Cadastrar">
         <hr>
     </form>
 </body>
 </html>
 <?php
+    define('TAMANHO_MAXIMO', (2 *1024 *1024)); //Define uma constante para tamanho máximo aceito
+
     if($_SERVER["REQUEST_METHOD"] === "POST"){
+        //Armazenando os dados obtidos em variáveis para manipulá-las
         $ra = $_POST["ra"];
         trim($ra);
         $nome = $_POST["nome"];
@@ -62,8 +69,27 @@
         $curso = $_POST["curso"];
         trim($curso);
 
-        if($ra!="" && $nome!=""){
-            try{
+        $uploaddir = 'upload/fotos/'; //Local no qual a foto será salva
+
+        //Código de manipulação da Foto
+        $foto = $_FILES['foto'];
+        $nomeFoto = $foto['name'];
+        $tipoFoto = $foto['type'];
+        $tamanhoFoto = $foto['size'];
+
+        //Gerando novo nome para a foto
+        $info = new SplFileInfo($nomeFoto);
+        $extensaoArquivo = $info->getExtension();
+        $novoNomeFoto = $ra . "." . $extensaoArquivo;
+        
+        if((trim($ra)=="") || (trim($nome)=="")){
+            echo "<span id='warning'>RA e nome são obrigatórios!</span>";
+        } else if(($nomeFoto != '') && (!preg_match('/^image\/(jpeg|png|gif)$/', $tipoFoto))){
+            echo"<span id='error'>Imagem inválida!</span>";
+        }else if (($nomeFoto != "") && ($tamanhoFoto > TAMANHO_MAXIMO)){
+            echo "<span id='error'>A imagem deve possuir no máximo 2MB</span>";
+        } else{
+            try{   
                 include("conexaoBD.php");
 
                 $stmt = $pdo->prepare("select * from alunos where ra = :ra");
@@ -87,9 +113,6 @@
                 echo "Erro:" . $e->getMessage();
             }
             $pdo = null;
-        }
-        else{
-            echo "<span id='warning'>Cadastro de aluno falho: RA e nome são obrigatórios.</span>";
         }
     }
 ?>

@@ -98,10 +98,19 @@
 
                 $rows = $stmt->rowCount();
                 if($rows<=0){
-                    $stmt = $pdo->prepare("insert into alunos (ra, nome, curso) values (:ra, :nome, :curso)");
+
+                    if(($nomeFoto != "") and move_uploaded_file($_FILES['foto']['tmp_name'], $uploaddir . $novoNomeFoto)){
+                        $uploadfile = $uploaddir . $novoNomeFoto;
+                    }else{
+                        $uploadfile = null;
+                        echo "Sem upload de imagem.";
+                    }
+
+                    $stmt = $pdo->prepare("insert into alunos (ra, nome, curso, arquivoFoto) values (:ra, :nome, :curso, :foto)");
                     $stmt->bindParam(":ra", $ra);
                     $stmt->bindParam(":nome", $nome);
                     $stmt->bindParam(":curso", $curso);
+                    $stmt->bindParam(':foto', $uploadfile);
                     $stmt->execute();
                     echo "<span id='sucess'>Aluno cadastrado com sucesso!</span>";
                 }

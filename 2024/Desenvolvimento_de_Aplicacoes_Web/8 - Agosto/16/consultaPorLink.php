@@ -76,6 +76,7 @@
             echo "<th>RA</th>";
             echo "<th>Nome</th>";
             echo "<th>Curso</th>";
+            echo "<th>Foto</th>";
             echo "<th colspan='2'></th>";
             echo "</tr>";
             
@@ -84,6 +85,11 @@
                 echo "<td>" . $row["ra"] . "</td>";
                 echo "<td>" . $row["nome"] . "</td>";
                 echo "<td>" . $row["curso"] . "</td>";
+                if($row['arquivoFoto'] == null){
+                    echo "<td align='center'>---</td>";
+                } else{
+                    echo "<td align='center'><img src=" . $row['arquivoFoto'] ." width='50px'></td>";
+                }
 
                 //Método para exclusão de aluno
                 echo "<td>"; 

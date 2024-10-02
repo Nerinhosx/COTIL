@@ -21,6 +21,7 @@
             while($row = $stmt->fetch()){
                 $nome = $row['nome'];
                 $curso = $row['curso'];
+                $foto = $row['arquivoFoto'];
 
                 //Setando o curso correto para a exibição no Select
                 if($curso == "Edificações"){
@@ -68,7 +69,7 @@
     <hr>
 
     <h1>Edição de Alunos</h1>
-    <form method="POST" action="atualizacao.php">
+    <form method="POST" action="atualizacao.php" enctype="multipart/form-data">
         RA:<br>
         <input readonly type="text" size="30" name="ra" value="<?=$ra?>"><br><br>
 
@@ -85,6 +86,12 @@
             <option value="Mecânica" <?=$mecanica?>>Mecânica</option>
             <option value="Qualidade" <?=$qualidade?>>Qualidade</option>
         </select><br><br>
+
+        Foto:<br>
+        <img src="<?= $foto?>" width="120px"><br><br>
+
+        Nova foto:<br>
+        <input type="file" name="foto" accept="image/*"><br><br>
 
         <input type="submit" value="Atualizar">
         <hr>

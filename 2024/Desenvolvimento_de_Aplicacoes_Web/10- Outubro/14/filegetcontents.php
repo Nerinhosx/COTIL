@@ -7,5 +7,5 @@
  * lê o arquivo inteiro sem precisar informar limite da leitura e já faz o fclose.
  */
 
-    echo file_get_contents("teste.txt");
+    echo file_get_contents("http://cotil.unicamp.br");
 ?>

@@ -19,7 +19,7 @@
   //origem, destino - move pasta
   rename($dir1 . DIRECTORY_SEPARATOR . $filename, $dir2 . DIRECTORY_SEPARATOR . $filename);
 
-   //origem, destino - renomeia arquivo
-   //rename($dir1 . DIRECTORY_SEPARATOR . $filename, $dir1 . DIRECTORY_SEPARATOR . "simone.txt");
+  //origem, destino - renomeia arquivo
+  rename($dir2 . DIRECTORY_SEPARATOR . $filename, $dir1 . DIRECTORY_SEPARATOR . "simone.txt");
 
   echo "Arquivo movido com sucesso";

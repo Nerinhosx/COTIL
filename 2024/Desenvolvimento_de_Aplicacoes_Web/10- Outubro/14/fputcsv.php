@@ -5,7 +5,7 @@
 include("conexaoBD.php");
 
 try {
-    $stmt = $pdo->prepare("select * from alunos order by curso, nome");
+    $stmt = $pdo->prepare("select * from alunos order by ra");
     $stmt->execute();
 
     $fp = fopen('arquivoAlunos.csv', 'w');

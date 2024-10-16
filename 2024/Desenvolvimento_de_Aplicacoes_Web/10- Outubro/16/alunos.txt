@@ -1,0 +1,5 @@
+RA: 202227
+Nome: Arthur Nero
+Curso: Desenvolvimento de Sistemas
+
+{"ra":"202079","nome":"Guilherme Nunes","curso":"Enfermagem"}

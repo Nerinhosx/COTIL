@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "openboleto/openboleto",
+            "version": "v1.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openboleto/openboleto.git",
+                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openboleto/openboleto/zipball/ae70c2502b12cfbdad28377cddd8014031de76ce",
+                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-08-04T20:53:31+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "OpenBoleto\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Garajau",
+                    "email": "kriansa@facebook.com"
+                }
+            ],
+            "description": "Biblioteca para geração de boletos bancários.",
+            "homepage": "http://github.com/kriansa/openboleto",
+            "keywords": [
+                "boleto",
+                "boleto bancario"
+            ],
+            "support": {
+                "issues": "https://github.com/openboleto/openboleto/issues",
+                "source": "https://github.com/openboleto/openboleto/tree/v1.0"
+            },
+            "install-path": "../openboleto/openboleto"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

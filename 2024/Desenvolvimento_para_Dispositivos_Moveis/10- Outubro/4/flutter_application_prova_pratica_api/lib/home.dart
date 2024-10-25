@@ -56,33 +56,35 @@ class _MyHomeState extends State<MyHome> {
           child: Center(
             child: Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 10, bottom: 10),
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: anRepo.listAn.length,
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(
-                          anRepo.listAn[index].nomeC,
-                        ),
+                ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: anRepo.listAn.length,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color:Color.fromRGBO(14, 73, 18, 0.7),
+                      child: Padding(
+                        padding: EdgeInsets.only(bottom: 10),
+                        child: ListTile(
+                          title: Text(
+                            anRepo.listAn[index].nomeP,
+                          ),
 
-                        subtitle: Text(
-                          anRepo.listAn[index].nomeP,
-                        ),
+                          subtitle: Text(
+                            anRepo.listAn[index].nomeC,
+                          ),
 
-                        leading: Text(
-                          anRepo.listAn[index].riscoExt + " risco de extinção",
-                        ),
+                          leading: Text(
+                            anRepo.listAn[index].riscoExt + " risco de extinção",
+                          ),
 
-                        trailing: Text(
-                          "Hábito " + anRepo.listAn[index].habito,
+                          trailing: Text(
+                            "Hábito " + anRepo.listAn[index].habito,
+                          ),
+                          textColor: Color.fromRGBO(171, 210, 44, 1),
                         ),
-                        textColor: Color.fromRGBO(171, 210, 44, 1),
-                        tileColor: Color.fromRGBO(14, 73, 18, 1),
-                      );
-                    },
-                  ),
+                      )
+                    );
+                  },
                 ),
               ],
             ),

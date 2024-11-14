@@ -1,0 +1,17 @@
+"Nome Científico","Nome Popular",Habitat,"População Atual","Risco de Extinção",Hábito,Alimentação,Ambiente,Tamanho,Filo,Classe,Ordem,Família,Gênero,Espécie,CRBio
+Atta,Saúva,Amazônia,12890,"Baixo risco",Diurno,Herbívoro,Terrestre,Minúsculo,Cordado,Aracnídeos,sadasdas,sadasd,asdsd,sadsfdsaf,0
+"Canis lupus familiaris",Cachorro,"Mata Atlântica",54000000,"Fora de risco",Diurno,Carnívoro,Terrestre,Médio,Cordado,Mammalia,Carnivora,Canidae,Canis,"C. lupus",1
+"Chrysocyon brachyurus",Lobo-guará,Cerrado,10000,"Baixo risco",Diurno,Carnívoro,Terrestre,Médio,Cordado,Mammalia,Carnivora,Canidae,Chrysocyon,"C. brachyurus",1
+"Cyanopsitta spixii",Ararinha-azul,Amazônia,100,"Em risco",Diurno,Insetívoro,Aéreo,Pequeno,Cordado,Mammalia,Psittaciformes,Psittacidae,Cyanopsitta,"C. spixii",0
+"Danaus plexippus",Borboleta-monarca,Amazônia,23500,"Fora de risco",Diurno,Insetívoro,Aéreo,Minúsculo,Artrópode,Insetos,Lepidoptera,Nymphalidae,Danaus,"D. plexippus",0
+"Felis silvestris catus",Gato,"Mata Atlântica",23900000,"Fora de risco",Noturno,Carnívoro,Terrestre,Pequeno,Cordado,Mammalia,Carnivora,Felidae,Felis,"F. catus",0
+"Harpia harpyja","Gavião-real (Harpia)",Cerrado,6000,"Em risco",Diurno,Carnívoro,Aéreo,Grande,Cordado,Mammalia,Accipitriformes,Accipitridae,Harpia,"H. harpyja",1
+"Hydrochoerus hydrochaeris",Capivara,"Floresta tropical",20000,"Fora de risco",Diurno,Onívoro,Semiaquático,Médio,Cordado,Mammalia,Rodentia,Caviidae,Hydrochoerus,"H. hydrochaeris",0
+"Meriones unguiculatus",Gerbo,Desertos,10000,"Baixo risco",Noturno,Onívoro,Terrestre,Pequeno,Cordado,Mammalia,Rodentia,Muridae,Meriones,"M. unguiculatus",1
+"Physalia physalis",Caravela-portuguesa,Oceanos,12200,"Fora de risco",Diurno,Herbívoro,Aquático,Pequeno,Cnidário,Hydrozoa,Siphonophora,Physaliidae,Physalia,"P. physalis",1
+"Pteropus livingstonii","Morcego raposa-voadora","Floresta tropical",5000,"Em risco",Noturno,Carnívoro,Aéreo,Pequeno,Cordado,Mammalia,Chiroptera,Pteropodidae,Pteropus,"P. livingstonii",1
+"Rhincodon typus",Tubarão-baleia,Oceanos,100000,"Em risco",Diurno,Carnívoro,Aquático,Enorme,Cordado,Mammalia,Orectolobiformes,Rhincodontidae,Rhincodon,"R. typus",0
+Smilodon,Tigre-dentes-de-sabre,"Floresta temperada",0,Extinto,Diurno,Carnívoro,Terrestre,Médio,Cordado,Cephalochordata,adsad,sdasd,asdasd,asda,1
+"Tetragonisca angustula",Jataí,"Mata Atlântica",5000000,"Baixo risco",Diurno,Herbívoro,Terrestre,Pequeno,Artrópode,Insetos,Hymenoptera,Apidae,Tetragonisca,"T. angustula",0
+"Tolypeutes tricinctus",Tatu-bola,"Mata Atlântica",120,"Em risco",Noturno,Carnívoro,Aéreo,Enorme,Cordado,Cephalochordata,fdsf,grgf,fsdf,dfsf,1
+"Velociraptor mongoliensis",Velociraptor,Ásia,0,Extinto,Diurno,Carnívoro,Terrestre,Médio,Cordata,Dinosauria,Theropoda,Dromaeosauridae,Eudromaeosauria,"V. mongoliensis",0
